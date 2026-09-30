@@ -1,0 +1,1124 @@
+{
+    "models": {
+        "gpt-6-astra": {
+            "window": 1050000,
+            "modalities": [
+                "text",
+                "image"
+            ],
+            "efforts": [
+                "low",
+                "medium",
+                "high",
+                "xhigh",
+                "max"
+            ],
+            "price": {
+                "currency": "USD",
+                "standard": {
+                    "input": {
+                        "_": 10000
+                    },
+                    "output": {
+                        "_": 50000
+                    },
+                    "cache_read": {
+                        "_": 1000
+                    },
+                    "cache_write": {
+                        "_": {
+                            "_": 12500
+                        }
+                    }
+                },
+                "extended": {
+                    "threshold": 272000,
+                    "tier": {
+                        "input": {
+                            "_": 20000
+                        },
+                        "output": {
+                            "_": 75000
+                        },
+                        "cache_read": {
+                            "_": 2000
+                        },
+                        "cache_write": {
+                            "_": {
+                                "_": 25000
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "gpt-6-sol": {
+            "window": 1050000,
+            "modalities": [
+                "text",
+                "image"
+            ],
+            "efforts": [
+                "none",
+                "low",
+                "medium",
+                "high",
+                "xhigh",
+                "max"
+            ],
+            "price": {
+                "currency": "USD",
+                "standard": {
+                    "input": {
+                        "_": 2000
+                    },
+                    "output": {
+                        "_": 10000
+                    },
+                    "cache_read": {
+                        "_": 200
+                    },
+                    "cache_write": {
+                        "_": {
+                            "_": 2500
+                        }
+                    }
+                },
+                "extended": {
+                    "threshold": 272000,
+                    "tier": {
+                        "input": {
+                            "_": 4000
+                        },
+                        "output": {
+                            "_": 15000
+                        },
+                        "cache_read": {
+                            "_": 400
+                        },
+                        "cache_write": {
+                            "_": {
+                                "_": 5000
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "gpt-6-luna": {
+            "window": 1050000,
+            "modalities": [
+                "text",
+                "image"
+            ],
+            "efforts": [
+                "none",
+                "low",
+                "medium",
+                "high",
+                "xhigh",
+                "max"
+            ],
+            "price": {
+                "currency": "USD",
+                "standard": {
+                    "input": {
+                        "_": 100
+                    },
+                    "output": {
+                        "_": 500
+                    },
+                    "cache_read": {
+                        "_": 10
+                    },
+                    "cache_write": {
+                        "_": {
+                            "_": 125
+                        }
+                    }
+                },
+                "extended": {
+                    "threshold": 272000,
+                    "tier": {
+                        "input": {
+                            "_": 200
+                        },
+                        "output": {
+                            "_": 750
+                        },
+                        "cache_read": {
+                            "_": 20
+                        },
+                        "cache_write": {
+                            "_": {
+                                "_": 250
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "gpt-5.6-sol": {
+            "window": 1050000,
+            "modalities": [
+                "text",
+                "image"
+            ],
+            "efforts": [
+                "none",
+                "low",
+                "medium",
+                "high",
+                "xhigh",
+                "max"
+            ],
+            "price": {
+                "currency": "USD",
+                "standard": {
+                    "input": {
+                        "_": 4000
+                    },
+                    "output": {
+                        "_": 20000
+                    },
+                    "cache_read": {
+                        "_": 400
+                    },
+                    "cache_write": {
+                        "_": {
+                            "_": 5000
+                        }
+                    }
+                },
+                "extended": {
+                    "threshold": 272000,
+                    "tier": {
+                        "input": {
+                            "_": 8000
+                        },
+                        "output": {
+                            "_": 30000
+                        },
+                        "cache_read": {
+                            "_": 800
+                        },
+                        "cache_write": {
+                            "_": {
+                                "_": 10000
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "gpt-5.6-terra": {
+            "window": 1050000,
+            "modalities": [
+                "text",
+                "image"
+            ],
+            "efforts": [
+                "none",
+                "low",
+                "medium",
+                "high",
+                "xhigh",
+                "max"
+            ],
+            "price": {
+                "currency": "USD",
+                "standard": {
+                    "input": {
+                        "_": 2000
+                    },
+                    "output": {
+                        "_": 12000
+                    },
+                    "cache_read": {
+                        "_": 200
+                    },
+                    "cache_write": {
+                        "_": {
+                            "_": 2500
+                        }
+                    }
+                },
+                "extended": {
+                    "threshold": 272000,
+                    "tier": {
+                        "input": {
+                            "_": 4000
+                        },
+                        "output": {
+                            "_": 18000
+                        },
+                        "cache_read": {
+                            "_": 400
+                        },
+                        "cache_write": {
+                            "_": {
+                                "_": 5000
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "gpt-5.6-luna": {
+            "window": 1050000,
+            "modalities": [
+                "text",
+                "image"
+            ],
+            "efforts": [
+                "none",
+                "low",
+                "medium",
+                "high",
+                "xhigh",
+                "max"
+            ],
+            "price": {
+                "currency": "USD",
+                "standard": {
+                    "input": {
+                        "_": 200
+                    },
+                    "output": {
+                        "_": 1200
+                    },
+                    "cache_read": {
+                        "_": 20
+                    },
+                    "cache_write": {
+                        "_": {
+                            "_": 250
+                        }
+                    }
+                },
+                "extended": {
+                    "threshold": 272000,
+                    "tier": {
+                        "input": {
+                            "_": 400
+                        },
+                        "output": {
+                            "_": 1800
+                        },
+                        "cache_read": {
+                            "_": 40
+                        },
+                        "cache_write": {
+                            "_": {
+                                "_": 500
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "deepseek-flash": {
+            "window": 1048576,
+            "modalities": [
+                "text",
+                "image"
+            ],
+            "efforts": [
+                "none",
+                "low",
+                "high",
+                "max"
+            ],
+            "price": {
+                "currency": "CNY",
+                "standard": {
+                    "input": {
+                        "_": 1000
+                    },
+                    "output": {
+                        "_": 4000
+                    },
+                    "cache_read": {
+                        "_": 20
+                    },
+                    "cache_write": {}
+                },
+                "peak": {
+                    "condition": {
+                        "timezone": "Asia/Shanghai",
+                        "weekdays": true,
+                        "windows": [
+                            {
+                                "start": "09:00",
+                                "end": "12:00"
+                            },
+                            {
+                                "start": "14:00",
+                                "end": "18:00"
+                            }
+                        ]
+                    },
+                    "multiplier": 2.0
+                }
+            }
+        },
+        "deepseek-v4-pro": {
+            "window": 1048576,
+            "modalities": [
+                "text"
+            ],
+            "efforts": [
+                "none",
+                "low",
+                "high",
+                "max"
+            ],
+            "price": {
+                "currency": "CNY",
+                "standard": {
+                    "input": {
+                        "_": 4500
+                    },
+                    "output": {
+                        "_": 13500
+                    },
+                    "cache_read": {
+                        "_": 150
+                    },
+                    "cache_write": {}
+                },
+                "peak": {
+                    "condition": {
+                        "timezone": "Asia/Shanghai",
+                        "weekdays": true,
+                        "windows": [
+                            {
+                                "start": "09:00",
+                                "end": "12:00"
+                            },
+                            {
+                                "start": "14:00",
+                                "end": "18:00"
+                            }
+                        ]
+                    },
+                    "multiplier": 2.0
+                }
+            }
+        },
+        "kimi-k3": {
+            "window": 1000000,
+            "modalities": [
+                "text",
+                "image",
+                "video"
+            ],
+            "efforts": [
+                "low",
+                "high",
+                "max"
+            ],
+            "price": {
+                "currency": "CNY",
+                "standard": {
+                    "input": {
+                        "_": 20000
+                    },
+                    "output": {
+                        "_": 100000
+                    },
+                    "cache_read": {
+                        "_": 2000
+                    },
+                    "cache_write": {}
+                }
+            }
+        },
+        "glm-5.3": {
+            "window": 1000000,
+            "modalities": [
+                "text"
+            ],
+            "efforts": [
+                "low",
+                "high",
+                "max"
+            ],
+            "price": {
+                "currency": "CNY",
+                "standard": {
+                    "input": {
+                        "_": 8000
+                    },
+                    "output": {
+                        "_": 28000
+                    },
+                    "cache_read": {
+                        "_": 2000
+                    },
+                    "cache_write": {}
+                }
+            }
+        },
+        "glm-5.3-flash": {
+            "window": 1000000,
+            "modalities": [
+                "text",
+                "image",
+                "video",
+                "pdf"
+            ],
+            "efforts": [
+                "low",
+                "high",
+                "max"
+            ],
+            "price": {
+                "currency": "CNY",
+                "standard": {
+                    "input": {
+                        "_": 800
+                    },
+                    "output": {
+                        "_": 2800
+                    },
+                    "cache_read": {
+                        "_": 230
+                    },
+                    "cache_write": {}
+                }
+            }
+        },
+        "glm-5.3-flashx": {
+            "window": 1000000,
+            "modalities": [
+                "text",
+                "image",
+                "video",
+                "pdf"
+            ],
+            "efforts": [
+                "low",
+                "high",
+                "max"
+            ],
+            "price": {
+                "currency": "CNY",
+                "standard": {
+                    "input": {
+                        "_": 2000
+                    },
+                    "output": {
+                        "_": 7000
+                    },
+                    "cache_read": {
+                        "_": 570
+                    },
+                    "cache_write": {}
+                }
+            }
+        },
+        "qwen3.8-max": {
+            "window": 1000000,
+            "modalities": [
+                "text",
+                "image",
+                "video"
+            ],
+            "efforts": [
+                "low",
+                "medium",
+                "xhigh"
+            ],
+            "price": {
+                "currency": "CNY",
+                "standard": {
+                    "input": {
+                        "_": 12000
+                    },
+                    "output": {
+                        "_": 36000
+                    },
+                    "cache_read": {
+                        "_": 1500
+                    },
+                    "cache_write": {}
+                }
+            }
+        },
+        "qwen3.8-flash": {
+            "window": 1000000,
+            "modalities": [
+                "text",
+                "image",
+                "video"
+            ],
+            "efforts": [
+                "low",
+                "medium",
+                "xhigh"
+            ],
+            "price": {
+                "currency": "CNY",
+                "standard": {
+                    "input": {
+                        "_": 800
+                    },
+                    "output": {
+                        "_": 2700
+                    },
+                    "cache_read": {
+                        "_": 100
+                    },
+                    "cache_write": {}
+                }
+            }
+        },
+        "muse-spark-1.3": {
+            "window": 1048576,
+            "modalities": [
+                "text",
+                "image",
+                "video",
+                "audio",
+                "pdf"
+            ],
+            "efforts": [
+                "minimal",
+                "low",
+                "medium",
+                "high",
+                "xhigh",
+                "max"
+            ],
+            "price": {
+                "currency": "USD",
+                "standard": {
+                    "input": {
+                        "_": 1250
+                    },
+                    "output": {
+                        "_": 4250
+                    },
+                    "cache_read": {
+                        "_": 150
+                    },
+                    "cache_write": {}
+                }
+            }
+        },
+        "muse-spark-1.2": {
+            "window": 1048576,
+            "modalities": [
+                "text",
+                "image",
+                "video",
+                "audio",
+                "pdf"
+            ],
+            "efforts": [
+                "minimal",
+                "low",
+                "medium",
+                "high",
+                "xhigh"
+            ],
+            "price": {
+                "currency": "USD",
+                "standard": {
+                    "input": {
+                        "_": 1250
+                    },
+                    "output": {
+                        "_": 4250
+                    },
+                    "cache_read": {
+                        "_": 150
+                    },
+                    "cache_write": {}
+                }
+            }
+        },
+        "muse-spark-1.1": {
+            "window": 1048576,
+            "modalities": [
+                "text",
+                "image",
+                "video",
+                "audio",
+                "pdf"
+            ],
+            "efforts": [
+                "minimal",
+                "low",
+                "medium",
+                "high",
+                "xhigh"
+            ],
+            "price": {
+                "currency": "USD",
+                "standard": {
+                    "input": {
+                        "_": 1250
+                    },
+                    "output": {
+                        "_": 4250
+                    },
+                    "cache_read": {
+                        "_": 150
+                    },
+                    "cache_write": {}
+                }
+            }
+        },
+        "gpt-image-2": {
+            "window": null,
+            "modalities": [
+                "text",
+                "image"
+            ],
+            "efforts": null,
+            "price": {
+                "currency": "USD",
+                "standard": {
+                    "input": {
+                        "text": 5000,
+                        "image": 8000
+                    },
+                    "output": {
+                        "_": 30000
+                    },
+                    "cache_read": {
+                        "text": 1250,
+                        "image": 2000
+                    },
+                    "cache_write": {}
+                }
+            }
+        },
+        "gpt-image-2.5-sunburst": {
+            "window": null,
+            "modalities": [
+                "text",
+                "image"
+            ],
+            "efforts": null,
+            "price": {
+                "currency": "USD",
+                "standard": {
+                    "input": {
+                        "text": 5000,
+                        "image": 8000
+                    },
+                    "output": {
+                        "_": 30000
+                    },
+                    "cache_read": {
+                        "text": 1250,
+                        "image": 2000
+                    },
+                    "cache_write": {}
+                }
+            }
+        },
+        "gpt-image-2.5-flare": {
+            "window": null,
+            "modalities": [
+                "text",
+                "image"
+            ],
+            "efforts": null,
+            "price": {
+                "currency": "USD",
+                "standard": {
+                    "input": {
+                        "text": 5000,
+                        "image": 8000
+                    },
+                    "output": {
+                        "_": 30000
+                    },
+                    "cache_read": {
+                        "text": 1250,
+                        "image": 2000
+                    },
+                    "cache_write": {}
+                }
+            }
+        },
+        "grok-4.6": {
+            "window": 500000,
+            "modalities": [
+                "text",
+                "image"
+            ],
+            "efforts": [
+                "low",
+                "medium",
+                "high",
+                "xhigh"
+            ],
+            "price": {
+                "currency": "USD",
+                "standard": {
+                    "input": {
+                        "_": 2000
+                    },
+                    "output": {
+                        "_": 6000
+                    },
+                    "cache_read": {
+                        "_": 500
+                    },
+                    "cache_write": {}
+                },
+                "extended": {
+                    "threshold": 200000,
+                    "tier": {
+                        "input": {
+                            "_": 4000
+                        },
+                        "output": {
+                            "_": 12000
+                        },
+                        "cache_read": {
+                            "_": 1000
+                        },
+                        "cache_write": {}
+                    }
+                }
+            }
+        },
+        "grok-4.7": {
+            "window": 500000,
+            "modalities": [
+                "text",
+                "image"
+            ],
+            "efforts": [
+                "low",
+                "medium",
+                "high",
+                "xhigh"
+            ],
+            "price": {
+                "currency": "USD",
+                "standard": {
+                    "input": {
+                        "_": 2000
+                    },
+                    "output": {
+                        "_": 6000
+                    },
+                    "cache_read": {
+                        "_": 500
+                    },
+                    "cache_write": {}
+                },
+                "extended": {
+                    "threshold": 200000,
+                    "tier": {
+                        "input": {
+                            "_": 4000
+                        },
+                        "output": {
+                            "_": 12000
+                        },
+                        "cache_read": {
+                            "_": 1000
+                        },
+                        "cache_write": {}
+                    }
+                }
+            }
+        },
+        "grok-4.5": {
+            "window": 500000,
+            "modalities": [
+                "text",
+                "image"
+            ],
+            "efforts": [
+                "low",
+                "medium",
+                "high"
+            ],
+            "price": {
+                "currency": "USD",
+                "standard": {
+                    "input": {
+                        "_": 2000
+                    },
+                    "output": {
+                        "_": 6000
+                    },
+                    "cache_read": {
+                        "_": 300
+                    },
+                    "cache_write": {}
+                },
+                "extended": {
+                    "threshold": 200000,
+                    "tier": {
+                        "input": {
+                            "_": 4000
+                        },
+                        "output": {
+                            "_": 12000
+                        },
+                        "cache_read": {
+                            "_": 600
+                        },
+                        "cache_write": {}
+                    }
+                }
+            }
+        },
+        "claude-fable-5": {
+            "window": 1000000,
+            "modalities": [
+                "text",
+                "image"
+            ],
+            "efforts": [
+                "low",
+                "medium",
+                "high",
+                "xhigh",
+                "max"
+            ],
+            "price": {
+                "currency": "USD",
+                "standard": {
+                    "input": {
+                        "_": 10000
+                    },
+                    "output": {
+                        "_": 50000
+                    },
+                    "cache_read": {
+                        "_": 1000
+                    },
+                    "cache_write": {
+                        "5m": {
+                            "_": 12500
+                        },
+                        "1h": {
+                            "_": 20000
+                        }
+                    }
+                }
+            }
+        },
+        "claude-fable-5-1": {
+            "window": 1000000,
+            "modalities": [
+                "text",
+                "image"
+            ],
+            "efforts": [
+                "low",
+                "medium",
+                "high",
+                "xhigh",
+                "max"
+            ],
+            "price": {
+                "currency": "USD",
+                "standard": {
+                    "input": {
+                        "_": 10000
+                    },
+                    "output": {
+                        "_": 50000
+                    },
+                    "cache_read": {
+                        "_": 250
+                    },
+                    "cache_write": {
+                        "5m": {
+                            "_": 12500
+                        },
+                        "1h": {
+                            "_": 20000
+                        }
+                    }
+                }
+            }
+        },
+        "claude-opus-5": {
+            "window": 1000000,
+            "modalities": [
+                "text",
+                "image"
+            ],
+            "efforts": [
+                "low",
+                "medium",
+                "high",
+                "xhigh",
+                "max"
+            ],
+            "price": {
+                "currency": "USD",
+                "standard": {
+                    "input": {
+                        "_": 5000
+                    },
+                    "output": {
+                        "_": 25000
+                    },
+                    "cache_read": {
+                        "_": 500
+                    },
+                    "cache_write": {
+                        "5m": {
+                            "_": 6250
+                        },
+                        "1h": {
+                            "_": 10000
+                        }
+                    }
+                }
+            }
+        },
+        "claude-opus-5-5": {
+            "window": 1000000,
+            "modalities": [
+                "text",
+                "image"
+            ],
+            "efforts": [
+                "low",
+                "medium",
+                "high",
+                "xhigh",
+                "max"
+            ],
+            "price": {
+                "currency": "USD",
+                "standard": {
+                    "input": {
+                        "_": 4000
+                    },
+                    "output": {
+                        "_": 20000
+                    },
+                    "cache_read": {
+                        "_": 200
+                    },
+                    "cache_write": {
+                        "5m": {
+                            "_": 5000
+                        },
+                        "1h": {
+                            "_": 8000
+                        }
+                    }
+                }
+            }
+        },
+        "claude-sonnet-5": {
+            "window": 1000000,
+            "modalities": [
+                "text",
+                "image"
+            ],
+            "efforts": [
+                "low",
+                "medium",
+                "high",
+                "xhigh",
+                "max"
+            ],
+            "price": {
+                "currency": "USD",
+                "standard": {
+                    "input": {
+                        "_": 2000
+                    },
+                    "output": {
+                        "_": 10000
+                    },
+                    "cache_read": {
+                        "_": 200
+                    },
+                    "cache_write": {
+                        "5m": {
+                            "_": 2500
+                        },
+                        "1h": {
+                            "_": 4000
+                        }
+                    }
+                }
+            }
+        },
+        "claude-sonnet-5-5": {
+            "window": 1000000,
+            "modalities": [
+                "text",
+                "image"
+            ],
+            "efforts": [
+                "low",
+                "medium",
+                "high",
+                "xhigh",
+                "max"
+            ],
+            "price": {
+                "currency": "USD",
+                "standard": {
+                    "input": {
+                        "_": 2000
+                    },
+                    "output": {
+                        "_": 10000
+                    },
+                    "cache_read": {
+                        "_": 200
+                    },
+                    "cache_write": {
+                        "5m": {
+                            "_": 2500
+                        },
+                        "1h": {
+                            "_": 4000
+                        }
+                    }
+                }
+            }
+        },
+        "gemini-3.8-flash": {
+            "window": 1000000,
+            "modalities": [
+                "text",
+                "image",
+                "audio",
+                "video",
+                "pdf"
+            ],
+            "efforts": [
+                "low",
+                "medium",
+                "high"
+            ],
+            "price": {
+                "currency": "USD",
+                "standard": {
+                    "input": {
+                        "_": 750
+                    },
+                    "output": {
+                        "_": 3750
+                    },
+                    "cache_read": {
+                        "_": 75
+                    },
+                    "cache_write": {}
+                }
+            }
+        }
+    }
+}
