@@ -1,100 +1,247 @@
-[
-  {
-    "id": "gpt-6-astra",
-    "label": "GPT 6 Astra",
-    "window": 1050000,
-    "modalities": [
-      "text",
-      "image"
-    ],
-    "efforts": [
-      "low",
-      "medium",
-      "high",
-      "xhigh",
-      "max"
-    ],
-    "price": {
-      "currency": "USD",
-      "standard": {
-        "input": {
-          "_": 10000
-        },
-        "output": {
-          "_": 50000
-        },
-        "cache_read": {
-          "_": 1000
-        },
-        "cache_write": {
-          "_": {
-            "_": 12500
-          }
-        }
-      },
-      "extended": {
-        "threshold": 272000,
-        "tier": {
+{
+  "models": {
+    "gpt-6-astra": {
+      "id": "gpt-6-astra",
+      "label": "GPT 6 Astra",
+      "window": 1050000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
           "input": {
-            "_": 20000
+            "_": 10000
           },
           "output": {
-            "_": 75000
+            "_": 50000
           },
           "cache_read": {
-            "_": 2000
+            "_": 1000
           },
           "cache_write": {
             "_": {
-              "_": 25000
+              "_": 12500
+            }
+          }
+        },
+        "extended": {
+          "threshold": 272000,
+          "tier": {
+            "input": {
+              "_": 20000
+            },
+            "output": {
+              "_": 75000
+            },
+            "cache_read": {
+              "_": 2000
+            },
+            "cache_write": {
+              "_": {
+                "_": 25000
+              }
             }
           }
         }
       }
-    }
-  },
-  {
-    "id": "gpt-6-sol",
-    "label": "GPT 6 Sol",
-    "window": 1050000,
-    "modalities": [
-      "text",
-      "image"
-    ],
-    "efforts": [
-      "none",
-      "low",
-      "medium",
-      "high",
-      "xhigh",
-      "max"
-    ],
-    "price": {
-      "currency": "USD",
-      "standard": {
-        "input": {
-          "_": 2000
+    },
+    "gpt-6.1-sol": {
+      "id": "gpt-6.1-sol",
+      "label": "GPT 6.1 Sol",
+      "window": 1050000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "_": 2000
+          },
+          "output": {
+            "_": 10000
+          },
+          "cache_read": {
+            "_": 100
+          },
+          "cache_write": {
+            "_": {
+              "_": 2500
+            }
+          }
         },
-        "output": {
-          "_": 10000
-        },
-        "cache_read": {
-          "_": 200
-        },
-        "cache_write": {
-          "_": {
-            "_": 2500
+        "extended": {
+          "threshold": 272000,
+          "tier": {
+            "input": {
+              "_": 4000
+            },
+            "output": {
+              "_": 15000
+            },
+            "cache_read": {
+              "_": 200
+            },
+            "cache_write": {
+              "_": {
+                "_": 5000
+              }
+            }
           }
         }
-      },
-      "extended": {
-        "threshold": 272000,
-        "tier": {
+      }
+    },
+    "gpt-6-sol": {
+      "id": "gpt-6-sol",
+      "label": "GPT 6 Sol",
+      "window": 1050000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": [
+        "none",
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "_": 2000
+          },
+          "output": {
+            "_": 10000
+          },
+          "cache_read": {
+            "_": 200
+          },
+          "cache_write": {
+            "_": {
+              "_": 2500
+            }
+          }
+        },
+        "extended": {
+          "threshold": 272000,
+          "tier": {
+            "input": {
+              "_": 4000
+            },
+            "output": {
+              "_": 15000
+            },
+            "cache_read": {
+              "_": 400
+            },
+            "cache_write": {
+              "_": {
+                "_": 5000
+              }
+            }
+          }
+        }
+      }
+    },
+    "gpt-6-luna": {
+      "id": "gpt-6-luna",
+      "label": "GPT 6 Luna",
+      "window": 1050000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": [
+        "none",
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "_": 100
+          },
+          "output": {
+            "_": 500
+          },
+          "cache_read": {
+            "_": 10
+          },
+          "cache_write": {
+            "_": {
+              "_": 125
+            }
+          }
+        },
+        "extended": {
+          "threshold": 272000,
+          "tier": {
+            "input": {
+              "_": 200
+            },
+            "output": {
+              "_": 750
+            },
+            "cache_read": {
+              "_": 20
+            },
+            "cache_write": {
+              "_": {
+                "_": 250
+              }
+            }
+          }
+        }
+      }
+    },
+    "gpt-5.6-sol": {
+      "id": "gpt-5.6-sol",
+      "label": "GPT 5.6 Sol",
+      "window": 1050000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": [
+        "none",
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
           "input": {
             "_": 4000
           },
           "output": {
-            "_": 15000
+            "_": 20000
           },
           "cache_read": {
             "_": 400
@@ -104,52 +251,107 @@
               "_": 5000
             }
           }
-        }
-      }
-    }
-  },
-  {
-    "id": "gpt-6-luna",
-    "label": "GPT 6 Luna",
-    "window": 1050000,
-    "modalities": [
-      "text",
-      "image"
-    ],
-    "efforts": [
-      "none",
-      "low",
-      "medium",
-      "high",
-      "xhigh",
-      "max"
-    ],
-    "price": {
-      "currency": "USD",
-      "standard": {
-        "input": {
-          "_": 100
         },
-        "output": {
-          "_": 500
-        },
-        "cache_read": {
-          "_": 10
-        },
-        "cache_write": {
-          "_": {
-            "_": 125
+        "extended": {
+          "threshold": 272000,
+          "tier": {
+            "input": {
+              "_": 8000
+            },
+            "output": {
+              "_": 30000
+            },
+            "cache_read": {
+              "_": 800
+            },
+            "cache_write": {
+              "_": {
+                "_": 10000
+              }
+            }
           }
         }
-      },
-      "extended": {
-        "threshold": 272000,
-        "tier": {
+      }
+    },
+    "gpt-5.6-terra": {
+      "id": "gpt-5.6-terra",
+      "label": "GPT 5.6 Terra",
+      "window": 1050000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": [
+        "none",
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "_": 2000
+          },
+          "output": {
+            "_": 12000
+          },
+          "cache_read": {
+            "_": 200
+          },
+          "cache_write": {
+            "_": {
+              "_": 2500
+            }
+          }
+        },
+        "extended": {
+          "threshold": 272000,
+          "tier": {
+            "input": {
+              "_": 4000
+            },
+            "output": {
+              "_": 18000
+            },
+            "cache_read": {
+              "_": 400
+            },
+            "cache_write": {
+              "_": {
+                "_": 5000
+              }
+            }
+          }
+        }
+      }
+    },
+    "gpt-5.6-luna": {
+      "id": "gpt-5.6-luna",
+      "label": "GPT 5.6 Luna",
+      "window": 1050000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": [
+        "none",
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
           "input": {
             "_": 200
           },
           "output": {
-            "_": 750
+            "_": 1200
           },
           "cache_read": {
             "_": 20
@@ -159,1024 +361,945 @@
               "_": 250
             }
           }
-        }
-      }
-    }
-  },
-  {
-    "id": "gpt-5.6-sol",
-    "label": "GPT 5.6 Sol",
-    "window": 1050000,
-    "modalities": [
-      "text",
-      "image"
-    ],
-    "efforts": [
-      "none",
-      "low",
-      "medium",
-      "high",
-      "xhigh",
-      "max"
-    ],
-    "price": {
-      "currency": "USD",
-      "standard": {
-        "input": {
-          "_": 4000
         },
-        "output": {
-          "_": 20000
-        },
-        "cache_read": {
-          "_": 400
-        },
-        "cache_write": {
-          "_": {
-            "_": 5000
+        "extended": {
+          "threshold": 272000,
+          "tier": {
+            "input": {
+              "_": 400
+            },
+            "output": {
+              "_": 1800
+            },
+            "cache_read": {
+              "_": 40
+            },
+            "cache_write": {
+              "_": {
+                "_": 500
+              }
+            }
           }
         }
-      },
-      "extended": {
-        "threshold": 272000,
-        "tier": {
+      }
+    },
+    "deepseek-flash": {
+      "id": "deepseek-flash",
+      "label": "DeepSeek Flash",
+      "window": 1048576,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": [
+        "none",
+        "low",
+        "high",
+        "max"
+      ],
+      "price": {
+        "currency": "CNY",
+        "standard": {
+          "input": {
+            "_": 1000
+          },
+          "output": {
+            "_": 4000
+          },
+          "cache_read": {
+            "_": 20
+          },
+          "cache_write": {}
+        },
+        "peak": {
+          "condition": {
+            "timezone": "Asia/Shanghai",
+            "weekdays": true,
+            "windows": [
+              {
+                "start": "09:00",
+                "end": "12:00"
+              },
+              {
+                "start": "14:00",
+                "end": "18:00"
+              }
+            ]
+          },
+          "multiplier": 2
+        }
+      }
+    },
+    "deepseek-v4-pro": {
+      "id": "deepseek-v4-pro",
+      "label": "DeepSeek V4 Pro",
+      "window": 1048576,
+      "modalities": [
+        "text"
+      ],
+      "efforts": [
+        "none",
+        "low",
+        "high",
+        "max"
+      ],
+      "price": {
+        "currency": "CNY",
+        "standard": {
+          "input": {
+            "_": 4500
+          },
+          "output": {
+            "_": 13500
+          },
+          "cache_read": {
+            "_": 150
+          },
+          "cache_write": {}
+        },
+        "peak": {
+          "condition": {
+            "timezone": "Asia/Shanghai",
+            "weekdays": true,
+            "windows": [
+              {
+                "start": "09:00",
+                "end": "12:00"
+              },
+              {
+                "start": "14:00",
+                "end": "18:00"
+              }
+            ]
+          },
+          "multiplier": 2
+        }
+      }
+    },
+    "kimi-k3": {
+      "id": "kimi-k3",
+      "label": "Kimi K3",
+      "window": 1048576,
+      "modalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "efforts": [
+        "low",
+        "high",
+        "max"
+      ],
+      "price": {
+        "currency": "CNY",
+        "standard": {
+          "input": {
+            "_": 20000
+          },
+          "output": {
+            "_": 100000
+          },
+          "cache_read": {
+            "_": 2000
+          },
+          "cache_write": {
+            "5m": {
+              "_": 20000
+            },
+            "1h": {
+              "_": 40000
+            }
+          }
+        }
+      }
+    },
+    "glm-5.3": {
+      "id": "glm-5.3",
+      "label": "GLM 5.3",
+      "window": 1000000,
+      "modalities": [
+        "text"
+      ],
+      "efforts": [
+        "low",
+        "high",
+        "max"
+      ],
+      "price": {
+        "currency": "CNY",
+        "standard": {
           "input": {
             "_": 8000
+          },
+          "output": {
+            "_": 28000
+          },
+          "cache_read": {
+            "_": 2000
+          },
+          "cache_write": {}
+        }
+      }
+    },
+    "glm-5.3-flash": {
+      "id": "glm-5.3-flash",
+      "label": "GLM 5.3 Flash",
+      "window": 1000000,
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "efforts": [
+        "low",
+        "high",
+        "max"
+      ],
+      "price": {
+        "currency": "CNY",
+        "standard": {
+          "input": {
+            "_": 800
+          },
+          "output": {
+            "_": 2800
+          },
+          "cache_read": {
+            "_": 230
+          },
+          "cache_write": {}
+        }
+      }
+    },
+    "glm-5.3-flashx": {
+      "id": "glm-5.3-flashx",
+      "label": "GLM 5.3 FlashX",
+      "window": 1000000,
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "efforts": [
+        "low",
+        "high",
+        "max"
+      ],
+      "price": {
+        "currency": "CNY",
+        "standard": {
+          "input": {
+            "_": 2000
+          },
+          "output": {
+            "_": 7000
+          },
+          "cache_read": {
+            "_": 570
+          },
+          "cache_write": {}
+        }
+      }
+    },
+    "qwen3.8-max": {
+      "id": "qwen3.8-max",
+      "label": "Qwen 3.8 Max",
+      "window": 1000000,
+      "modalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "efforts": [
+        "low",
+        "medium",
+        "xhigh"
+      ],
+      "price": {
+        "currency": "CNY",
+        "standard": {
+          "input": {
+            "_": 12000
+          },
+          "output": {
+            "_": 36000
+          },
+          "cache_read": {
+            "_": 1500
+          },
+          "cache_write": {}
+        }
+      }
+    },
+    "qwen3.8-flash": {
+      "id": "qwen3.8-flash",
+      "label": "Qwen 3.8 Flash",
+      "window": 1000000,
+      "modalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "efforts": [
+        "low",
+        "medium",
+        "xhigh"
+      ],
+      "price": {
+        "currency": "CNY",
+        "standard": {
+          "input": {
+            "_": 800
+          },
+          "output": {
+            "_": 2700
+          },
+          "cache_read": {
+            "_": 100
+          },
+          "cache_write": {}
+        }
+      }
+    },
+    "muse-spark-1.3": {
+      "id": "muse-spark-1.3",
+      "label": "Muse Spark 1.3",
+      "window": 1048576,
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "_": 1250
+          },
+          "output": {
+            "_": 4250
+          },
+          "cache_read": {
+            "_": 150
+          },
+          "cache_write": {}
+        }
+      }
+    },
+    "muse-spark-1.2": {
+      "id": "muse-spark-1.2",
+      "label": "Muse Spark 1.2",
+      "window": 1048576,
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high",
+        "xhigh"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "_": 1250
+          },
+          "output": {
+            "_": 4250
+          },
+          "cache_read": {
+            "_": 150
+          },
+          "cache_write": {}
+        }
+      }
+    },
+    "muse-spark-1.1": {
+      "id": "muse-spark-1.1",
+      "label": "Muse Spark 1.1",
+      "window": 1048576,
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high",
+        "xhigh"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "_": 1250
+          },
+          "output": {
+            "_": 4250
+          },
+          "cache_read": {
+            "_": 150
+          },
+          "cache_write": {}
+        }
+      }
+    },
+    "gpt-image-2": {
+      "id": "gpt-image-2",
+      "label": "GPT Image 2",
+      "window": null,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": null,
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "text": 5000,
+            "image": 8000
           },
           "output": {
             "_": 30000
           },
           "cache_read": {
-            "_": 800
+            "text": 1250,
+            "image": 2000
+          },
+          "cache_write": {}
+        }
+      }
+    },
+    "gpt-image-2.5-sunburst": {
+      "id": "gpt-image-2.5-sunburst",
+      "label": "GPT Image 2.5 Sunburst",
+      "window": null,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": null,
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "text": 5000,
+            "image": 8000
+          },
+          "output": {
+            "_": 30000
+          },
+          "cache_read": {
+            "text": 1250,
+            "image": 2000
+          },
+          "cache_write": {}
+        }
+      }
+    },
+    "gpt-image-2.5-flare": {
+      "id": "gpt-image-2.5-flare",
+      "label": "GPT Image 2.5 Flare",
+      "window": null,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": null,
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "text": 5000,
+            "image": 8000
+          },
+          "output": {
+            "_": 30000
+          },
+          "cache_read": {
+            "text": 1250,
+            "image": 2000
+          },
+          "cache_write": {}
+        }
+      }
+    },
+    "grok-4.6": {
+      "id": "grok-4.6",
+      "label": "Grok 4.6",
+      "window": 500000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "_": 2000
+          },
+          "output": {
+            "_": 6000
+          },
+          "cache_read": {
+            "_": 500
+          },
+          "cache_write": {}
+        },
+        "extended": {
+          "threshold": 200000,
+          "tier": {
+            "input": {
+              "_": 4000
+            },
+            "output": {
+              "_": 12000
+            },
+            "cache_read": {
+              "_": 1000
+            },
+            "cache_write": {}
+          }
+        }
+      }
+    },
+    "grok-4.7": {
+      "id": "grok-4.7",
+      "label": "Grok 4.7",
+      "window": 500000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "_": 2000
+          },
+          "output": {
+            "_": 6000
+          },
+          "cache_read": {
+            "_": 500
+          },
+          "cache_write": {}
+        },
+        "extended": {
+          "threshold": 200000,
+          "tier": {
+            "input": {
+              "_": 4000
+            },
+            "output": {
+              "_": 12000
+            },
+            "cache_read": {
+              "_": 1000
+            },
+            "cache_write": {}
+          }
+        }
+      }
+    },
+    "grok-4.5": {
+      "id": "grok-4.5",
+      "label": "Grok 4.5",
+      "window": 500000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "_": 2000
+          },
+          "output": {
+            "_": 6000
+          },
+          "cache_read": {
+            "_": 300
+          },
+          "cache_write": {}
+        },
+        "extended": {
+          "threshold": 200000,
+          "tier": {
+            "input": {
+              "_": 4000
+            },
+            "output": {
+              "_": 12000
+            },
+            "cache_read": {
+              "_": 600
+            },
+            "cache_write": {}
+          }
+        }
+      }
+    },
+    "claude-fable-5": {
+      "id": "claude-fable-5",
+      "label": "Claude Fable 5",
+      "window": 1000000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "_": 10000
+          },
+          "output": {
+            "_": 50000
+          },
+          "cache_read": {
+            "_": 1000
           },
           "cache_write": {
-            "_": {
+            "5m": {
+              "_": 12500
+            },
+            "1h": {
+              "_": 20000
+            }
+          }
+        }
+      }
+    },
+    "claude-fable-5-1": {
+      "id": "claude-fable-5-1",
+      "label": "Claude Fable 5.1",
+      "window": 1000000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "_": 10000
+          },
+          "output": {
+            "_": 50000
+          },
+          "cache_read": {
+            "_": 250
+          },
+          "cache_write": {
+            "5m": {
+              "_": 12500
+            },
+            "1h": {
+              "_": 20000
+            }
+          }
+        }
+      }
+    },
+    "claude-opus-5": {
+      "id": "claude-opus-5",
+      "label": "Claude Opus 5",
+      "window": 1000000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "_": 5000
+          },
+          "output": {
+            "_": 25000
+          },
+          "cache_read": {
+            "_": 500
+          },
+          "cache_write": {
+            "5m": {
+              "_": 6250
+            },
+            "1h": {
               "_": 10000
             }
           }
         }
       }
-    }
-  },
-  {
-    "id": "gpt-5.6-terra",
-    "label": "GPT 5.6 Terra",
-    "window": 1050000,
-    "modalities": [
-      "text",
-      "image"
-    ],
-    "efforts": [
-      "none",
-      "low",
-      "medium",
-      "high",
-      "xhigh",
-      "max"
-    ],
-    "price": {
-      "currency": "USD",
-      "standard": {
-        "input": {
-          "_": 2000
-        },
-        "output": {
-          "_": 12000
-        },
-        "cache_read": {
-          "_": 200
-        },
-        "cache_write": {
-          "_": {
-            "_": 2500
-          }
-        }
-      },
-      "extended": {
-        "threshold": 272000,
-        "tier": {
+    },
+    "claude-opus-5-5": {
+      "id": "claude-opus-5-5",
+      "label": "Claude Opus 5.5",
+      "window": 1000000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
           "input": {
             "_": 4000
           },
           "output": {
-            "_": 18000
+            "_": 20000
           },
           "cache_read": {
-            "_": 400
+            "_": 200
           },
           "cache_write": {
-            "_": {
+            "5m": {
               "_": 5000
+            },
+            "1h": {
+              "_": 8000
             }
           }
         }
       }
-    }
-  },
-  {
-    "id": "gpt-5.6-luna",
-    "label": "GPT 5.6 Luna",
-    "window": 1050000,
-    "modalities": [
-      "text",
-      "image"
-    ],
-    "efforts": [
-      "none",
-      "low",
-      "medium",
-      "high",
-      "xhigh",
-      "max"
-    ],
-    "price": {
-      "currency": "USD",
-      "standard": {
-        "input": {
-          "_": 200
-        },
-        "output": {
-          "_": 1200
-        },
-        "cache_read": {
-          "_": 20
-        },
-        "cache_write": {
-          "_": {
-            "_": 250
-          }
-        }
-      },
-      "extended": {
-        "threshold": 272000,
-        "tier": {
+    },
+    "claude-sonnet-5": {
+      "id": "claude-sonnet-5",
+      "label": "Claude Sonnet 5",
+      "window": 1000000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
           "input": {
-            "_": 400
+            "_": 2000
           },
           "output": {
-            "_": 1800
+            "_": 10000
           },
           "cache_read": {
-            "_": 40
+            "_": 200
           },
           "cache_write": {
-            "_": {
-              "_": 500
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "id": "deepseek-flash",
-    "label": "DeepSeek Flash",
-    "window": 1048576,
-    "modalities": [
-      "text",
-      "image"
-    ],
-    "efforts": [
-      "none",
-      "low",
-      "high",
-      "max"
-    ],
-    "price": {
-      "currency": "CNY",
-      "standard": {
-        "input": {
-          "_": 1000
-        },
-        "output": {
-          "_": 4000
-        },
-        "cache_read": {
-          "_": 20
-        },
-        "cache_write": {}
-      },
-      "peak": {
-        "condition": {
-          "timezone": "Asia/Shanghai",
-          "weekdays": true,
-          "windows": [
-            {
-              "start": "09:00",
-              "end": "12:00"
+            "5m": {
+              "_": 2500
             },
-            {
-              "start": "14:00",
-              "end": "18:00"
+            "1h": {
+              "_": 4000
             }
-          ]
-        },
-        "multiplier": 2
-      }
-    }
-  },
-  {
-    "id": "deepseek-v4-pro",
-    "label": "DeepSeek V4 Pro",
-    "window": 1048576,
-    "modalities": [
-      "text"
-    ],
-    "efforts": [
-      "none",
-      "low",
-      "high",
-      "max"
-    ],
-    "price": {
-      "currency": "CNY",
-      "standard": {
-        "input": {
-          "_": 4500
-        },
-        "output": {
-          "_": 13500
-        },
-        "cache_read": {
-          "_": 150
-        },
-        "cache_write": {}
-      },
-      "peak": {
-        "condition": {
-          "timezone": "Asia/Shanghai",
-          "weekdays": true,
-          "windows": [
-            {
-              "start": "09:00",
-              "end": "12:00"
-            },
-            {
-              "start": "14:00",
-              "end": "18:00"
-            }
-          ]
-        },
-        "multiplier": 2
-      }
-    }
-  },
-  {
-    "id": "kimi-k3",
-    "label": "Kimi K3",
-    "window": 1000000,
-    "modalities": [
-      "text",
-      "image",
-      "video"
-    ],
-    "efforts": [
-      "low",
-      "high",
-      "max"
-    ],
-    "price": {
-      "currency": "CNY",
-      "standard": {
-        "input": {
-          "_": 20000
-        },
-        "output": {
-          "_": 100000
-        },
-        "cache_read": {
-          "_": 2000
-        },
-        "cache_write": {}
-      }
-    }
-  },
-  {
-    "id": "glm-5.3",
-    "label": "GLM 5.3",
-    "window": 1000000,
-    "modalities": [
-      "text"
-    ],
-    "efforts": [
-      "low",
-      "high",
-      "max"
-    ],
-    "price": {
-      "currency": "CNY",
-      "standard": {
-        "input": {
-          "_": 8000
-        },
-        "output": {
-          "_": 28000
-        },
-        "cache_read": {
-          "_": 2000
-        },
-        "cache_write": {}
-      }
-    }
-  },
-  {
-    "id": "glm-5.3-flash",
-    "label": "GLM 5.3 Flash",
-    "window": 1000000,
-    "modalities": [
-      "text",
-      "image",
-      "video",
-      "pdf"
-    ],
-    "efforts": [
-      "low",
-      "high",
-      "max"
-    ],
-    "price": {
-      "currency": "CNY",
-      "standard": {
-        "input": {
-          "_": 800
-        },
-        "output": {
-          "_": 2800
-        },
-        "cache_read": {
-          "_": 230
-        },
-        "cache_write": {}
-      }
-    }
-  },
-  {
-    "id": "glm-5.3-flashx",
-    "label": "GLM 5.3 FlashX",
-    "window": 1000000,
-    "modalities": [
-      "text",
-      "image",
-      "video",
-      "pdf"
-    ],
-    "efforts": [
-      "low",
-      "high",
-      "max"
-    ],
-    "price": {
-      "currency": "CNY",
-      "standard": {
-        "input": {
-          "_": 2000
-        },
-        "output": {
-          "_": 7000
-        },
-        "cache_read": {
-          "_": 570
-        },
-        "cache_write": {}
-      }
-    }
-  },
-  {
-    "id": "qwen3.8-max",
-    "label": "Qwen 3.8 Max",
-    "window": 1000000,
-    "modalities": [
-      "text",
-      "image",
-      "video"
-    ],
-    "efforts": [
-      "low",
-      "medium",
-      "xhigh"
-    ],
-    "price": {
-      "currency": "CNY",
-      "standard": {
-        "input": {
-          "_": 12000
-        },
-        "output": {
-          "_": 36000
-        },
-        "cache_read": {
-          "_": 1500
-        },
-        "cache_write": {}
-      }
-    }
-  },
-  {
-    "id": "qwen3.8-flash",
-    "label": "Qwen 3.8 Flash",
-    "window": 1000000,
-    "modalities": [
-      "text",
-      "image",
-      "video"
-    ],
-    "efforts": [
-      "low",
-      "medium",
-      "xhigh"
-    ],
-    "price": {
-      "currency": "CNY",
-      "standard": {
-        "input": {
-          "_": 800
-        },
-        "output": {
-          "_": 2700
-        },
-        "cache_read": {
-          "_": 100
-        },
-        "cache_write": {}
-      }
-    }
-  },
-  {
-    "id": "muse-spark-1.3",
-    "label": "Muse Spark 1.3",
-    "window": 1048576,
-    "modalities": [
-      "text",
-      "image",
-      "video",
-      "audio",
-      "pdf"
-    ],
-    "efforts": [
-      "minimal",
-      "low",
-      "medium",
-      "high",
-      "xhigh",
-      "max"
-    ],
-    "price": {
-      "currency": "USD",
-      "standard": {
-        "input": {
-          "_": 1250
-        },
-        "output": {
-          "_": 4250
-        },
-        "cache_read": {
-          "_": 150
-        },
-        "cache_write": {}
-      }
-    }
-  },
-  {
-    "id": "muse-spark-1.2",
-    "label": "Muse Spark 1.2",
-    "window": 1048576,
-    "modalities": [
-      "text",
-      "image",
-      "video",
-      "audio",
-      "pdf"
-    ],
-    "efforts": [
-      "minimal",
-      "low",
-      "medium",
-      "high",
-      "xhigh"
-    ],
-    "price": {
-      "currency": "USD",
-      "standard": {
-        "input": {
-          "_": 1250
-        },
-        "output": {
-          "_": 4250
-        },
-        "cache_read": {
-          "_": 150
-        },
-        "cache_write": {}
-      }
-    }
-  },
-  {
-    "id": "muse-spark-1.1",
-    "label": "Muse Spark 1.1",
-    "window": 1048576,
-    "modalities": [
-      "text",
-      "image",
-      "video",
-      "audio",
-      "pdf"
-    ],
-    "efforts": [
-      "minimal",
-      "low",
-      "medium",
-      "high",
-      "xhigh"
-    ],
-    "price": {
-      "currency": "USD",
-      "standard": {
-        "input": {
-          "_": 1250
-        },
-        "output": {
-          "_": 4250
-        },
-        "cache_read": {
-          "_": 150
-        },
-        "cache_write": {}
-      }
-    }
-  },
-  {
-    "id": "gpt-image-2",
-    "label": "GPT Image 2",
-    "window": null,
-    "modalities": [
-      "text",
-      "image"
-    ],
-    "efforts": null,
-    "price": {
-      "currency": "USD",
-      "standard": {
-        "input": {
-          "text": 5000,
-          "image": 8000
-        },
-        "output": {
-          "_": 30000
-        },
-        "cache_read": {
-          "text": 1250,
-          "image": 2000
-        },
-        "cache_write": {}
-      }
-    }
-  },
-  {
-    "id": "gpt-image-2.5-sunburst",
-    "label": "GPT Image 2.5 Sunburst",
-    "window": null,
-    "modalities": [
-      "text",
-      "image"
-    ],
-    "efforts": null,
-    "price": {
-      "currency": "USD",
-      "standard": {
-        "input": {
-          "text": 5000,
-          "image": 8000
-        },
-        "output": {
-          "_": 30000
-        },
-        "cache_read": {
-          "text": 1250,
-          "image": 2000
-        },
-        "cache_write": {}
-      }
-    }
-  },
-  {
-    "id": "gpt-image-2.5-flare",
-    "label": "GPT Image 2.5 Flare",
-    "window": null,
-    "modalities": [
-      "text",
-      "image"
-    ],
-    "efforts": null,
-    "price": {
-      "currency": "USD",
-      "standard": {
-        "input": {
-          "text": 5000,
-          "image": 8000
-        },
-        "output": {
-          "_": 30000
-        },
-        "cache_read": {
-          "text": 1250,
-          "image": 2000
-        },
-        "cache_write": {}
-      }
-    }
-  },
-  {
-    "id": "grok-4.6",
-    "label": "Grok 4.6",
-    "window": 500000,
-    "modalities": [
-      "text",
-      "image"
-    ],
-    "efforts": [
-      "low",
-      "medium",
-      "high",
-      "xhigh"
-    ],
-    "price": {
-      "currency": "USD",
-      "standard": {
-        "input": {
-          "_": 2000
-        },
-        "output": {
-          "_": 6000
-        },
-        "cache_read": {
-          "_": 500
-        },
-        "cache_write": {}
-      },
-      "extended": {
-        "threshold": 200000,
-        "tier": {
-          "input": {
-            "_": 4000
-          },
-          "output": {
-            "_": 12000
-          },
-          "cache_read": {
-            "_": 1000
-          },
-          "cache_write": {}
-        }
-      }
-    }
-  },
-  {
-    "id": "grok-4.7",
-    "label": "Grok 4.7",
-    "window": 500000,
-    "modalities": [
-      "text",
-      "image"
-    ],
-    "efforts": [
-      "low",
-      "medium",
-      "high",
-      "xhigh"
-    ],
-    "price": {
-      "currency": "USD",
-      "standard": {
-        "input": {
-          "_": 2000
-        },
-        "output": {
-          "_": 6000
-        },
-        "cache_read": {
-          "_": 500
-        },
-        "cache_write": {}
-      },
-      "extended": {
-        "threshold": 200000,
-        "tier": {
-          "input": {
-            "_": 4000
-          },
-          "output": {
-            "_": 12000
-          },
-          "cache_read": {
-            "_": 1000
-          },
-          "cache_write": {}
-        }
-      }
-    }
-  },
-  {
-    "id": "grok-4.5",
-    "label": "Grok 4.5",
-    "window": 500000,
-    "modalities": [
-      "text",
-      "image"
-    ],
-    "efforts": [
-      "low",
-      "medium",
-      "high"
-    ],
-    "price": {
-      "currency": "USD",
-      "standard": {
-        "input": {
-          "_": 2000
-        },
-        "output": {
-          "_": 6000
-        },
-        "cache_read": {
-          "_": 300
-        },
-        "cache_write": {}
-      },
-      "extended": {
-        "threshold": 200000,
-        "tier": {
-          "input": {
-            "_": 4000
-          },
-          "output": {
-            "_": 12000
-          },
-          "cache_read": {
-            "_": 600
-          },
-          "cache_write": {}
-        }
-      }
-    }
-  },
-  {
-    "id": "claude-fable-5",
-    "label": "Claude Fable 5",
-    "window": 1000000,
-    "modalities": [
-      "text",
-      "image"
-    ],
-    "efforts": [
-      "low",
-      "medium",
-      "high",
-      "xhigh",
-      "max"
-    ],
-    "price": {
-      "currency": "USD",
-      "standard": {
-        "input": {
-          "_": 10000
-        },
-        "output": {
-          "_": 50000
-        },
-        "cache_read": {
-          "_": 1000
-        },
-        "cache_write": {
-          "5m": {
-            "_": 12500
-          },
-          "1h": {
-            "_": 20000
           }
         }
       }
-    }
-  },
-  {
-    "id": "claude-fable-5-1",
-    "label": "Claude Fable 5.1",
-    "window": 1000000,
-    "modalities": [
-      "text",
-      "image"
-    ],
-    "efforts": [
-      "low",
-      "medium",
-      "high",
-      "xhigh",
-      "max"
-    ],
-    "price": {
-      "currency": "USD",
-      "standard": {
-        "input": {
-          "_": 10000
-        },
-        "output": {
-          "_": 50000
-        },
-        "cache_read": {
-          "_": 250
-        },
-        "cache_write": {
-          "5m": {
-            "_": 12500
+    },
+    "claude-sonnet-5-5": {
+      "id": "claude-sonnet-5-5",
+      "label": "Claude Sonnet 5.5",
+      "window": 1000000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "_": 2000
           },
-          "1h": {
-            "_": 20000
-          }
-        }
-      }
-    }
-  },
-  {
-    "id": "claude-opus-5",
-    "label": "Claude Opus 5",
-    "window": 1000000,
-    "modalities": [
-      "text",
-      "image"
-    ],
-    "efforts": [
-      "low",
-      "medium",
-      "high",
-      "xhigh",
-      "max"
-    ],
-    "price": {
-      "currency": "USD",
-      "standard": {
-        "input": {
-          "_": 5000
-        },
-        "output": {
-          "_": 25000
-        },
-        "cache_read": {
-          "_": 500
-        },
-        "cache_write": {
-          "5m": {
-            "_": 6250
-          },
-          "1h": {
+          "output": {
             "_": 10000
-          }
-        }
-      }
-    }
-  },
-  {
-    "id": "claude-opus-5-5",
-    "label": "Claude Opus 5.5",
-    "window": 1000000,
-    "modalities": [
-      "text",
-      "image"
-    ],
-    "efforts": [
-      "low",
-      "medium",
-      "high",
-      "xhigh",
-      "max"
-    ],
-    "price": {
-      "currency": "USD",
-      "standard": {
-        "input": {
-          "_": 4000
-        },
-        "output": {
-          "_": 20000
-        },
-        "cache_read": {
-          "_": 200
-        },
-        "cache_write": {
-          "5m": {
-            "_": 5000
           },
-          "1h": {
-            "_": 8000
-          }
-        }
-      }
-    }
-  },
-  {
-    "id": "claude-sonnet-5",
-    "label": "Claude Sonnet 5",
-    "window": 1000000,
-    "modalities": [
-      "text",
-      "image"
-    ],
-    "efforts": [
-      "low",
-      "medium",
-      "high",
-      "xhigh",
-      "max"
-    ],
-    "price": {
-      "currency": "USD",
-      "standard": {
-        "input": {
-          "_": 2000
-        },
-        "output": {
-          "_": 10000
-        },
-        "cache_read": {
-          "_": 200
-        },
-        "cache_write": {
-          "5m": {
-            "_": 2500
+          "cache_read": {
+            "_": 100
           },
-          "1h": {
-            "_": 4000
+          "cache_write": {
+            "5m": {
+              "_": 2500
+            },
+            "1h": {
+              "_": 4000
+            }
           }
         }
       }
-    }
-  },
-  {
-    "id": "claude-sonnet-5-5",
-    "label": "Claude Sonnet 5.5",
-    "window": 1000000,
-    "modalities": [
-      "text",
-      "image"
-    ],
-    "efforts": [
-      "low",
-      "medium",
-      "high",
-      "xhigh",
-      "max"
-    ],
-    "price": {
-      "currency": "USD",
-      "standard": {
-        "input": {
-          "_": 2000
-        },
-        "output": {
-          "_": 10000
-        },
-        "cache_read": {
-          "_": 200
-        },
-        "cache_write": {
-          "5m": {
-            "_": 2500
+    },
+    "claude-haiku-5-5": {
+      "id": "claude-haiku-5-5",
+      "label": "Claude Haiku 5.5",
+      "window": 1000000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "_": 100
           },
-          "1h": {
-            "_": 4000
+          "output": {
+            "_": 500
+          },
+          "cache_read": {
+            "_": 10
+          },
+          "cache_write": {
+            "5m": {
+              "_": 125
+            },
+            "1h": {
+              "_": 200
+            }
+          }
+        },
+        "extended": {
+          "threshold": 100000,
+          "tier": {
+            "input": {
+              "_": 500
+            },
+            "output": {
+              "_": 2500
+            },
+            "cache_read": {
+              "_": 50
+            },
+            "cache_write": {
+              "5m": {
+                "_": 625
+              },
+              "1h": {
+                "_": 1000
+              }
+            }
           }
         }
       }
-    }
-  },
-  {
-    "id": "gemini-3.8-flash",
-    "label": "Gemini 3.8 Flash",
-    "window": 1000000,
-    "modalities": [
-      "text",
-      "image",
-      "audio",
-      "video",
-      "pdf"
-    ],
-    "efforts": [
-      "low",
-      "medium",
-      "high"
-    ],
-    "price": {
-      "currency": "USD",
-      "standard": {
-        "input": {
-          "_": 750
-        },
-        "output": {
-          "_": 3750
-        },
-        "cache_read": {
-          "_": 75
-        },
-        "cache_write": {}
+    },
+    "gemini-3.8-flash": {
+      "id": "gemini-3.8-flash",
+      "label": "Gemini 3.8 Flash",
+      "window": 1000000,
+      "modalities": [
+        "text",
+        "image",
+        "audio",
+        "video",
+        "pdf"
+      ],
+      "efforts": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "_": 750
+          },
+          "output": {
+            "_": 3750
+          },
+          "cache_read": {
+            "_": 75
+          },
+          "cache_write": {}
+        }
       }
     }
   }
-]
+}
