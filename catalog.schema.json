@@ -1,0 +1,256 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Models",
+  "description": "模型信息与官方 API 价格目录契约，维护规范与跨字段语义见 MODELS_AGENTS.md。",
+  "type": "object",
+  "properties": {
+    "models": {
+      "title": "Models",
+      "description": "模型映射字典，键必须为全小写模型 ID，且与对象内部的 id 严格一致。",
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/Model"
+      }
+    }
+  },
+  "required": ["models"],
+  "additionalProperties": false,
+  "$defs": {
+    "Currency": {
+      "title": "Currency",
+      "type": "string",
+      "enum": ["USD", "CNY"]
+    },
+    "TimeZone": {
+      "title": "TimeZone",
+      "type": "string",
+      "enum": ["Asia/Shanghai"]
+    },
+    "Model": {
+      "title": "Model",
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "Id",
+          "description": "唯一规范标识，全小写，与字典键严格一致。",
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "title": "Label",
+          "description": "官方展示名称，保留官方品牌大小写。",
+          "type": "string",
+          "minLength": 1
+        },
+        "window": {
+          "title": "Window",
+          "description": "上下文总窗口近似正整数（便于 K/M 展示，如 1M 记为 1000000）。生图或未知时为 null；计费阈值不取整。",
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "modalities": {
+          "title": "Modalities",
+          "description": "支持的输入模态列表，如 text、image、audio、video、pdf。",
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "efforts": {
+          "title": "Efforts",
+          "description": "官方支持调节的思考/推理强度档位。不适用或固定时为 null，严禁为 []。",
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "uniqueItems": true
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "price": {
+          "$ref": "#/$defs/Price"
+        }
+      },
+      "required": ["id", "label", "window", "modalities", "efforts", "price"],
+      "additionalProperties": false
+    },
+    "Price": {
+      "title": "Price",
+      "type": "object",
+      "properties": {
+        "currency": {
+          "$ref": "#/$defs/Currency"
+        },
+        "standard": {
+          "$ref": "#/$defs/PriceTier"
+        },
+        "extended": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ExtendedProfile"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "peak": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/PeakProfile"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": ["currency", "standard"],
+      "additionalProperties": false
+    },
+    "PriceTier": {
+      "title": "PriceTier",
+      "description": "完整价格档位。单价单位为十亿分之一货币单位（即官方每 1M Token 标价 × 1000）。",
+      "type": "object",
+      "properties": {
+        "cache_read": {
+          "title": "Cache Read",
+          "description": "用量标签 → 单价。空对象表示无此项，0 表示明确免费。",
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "cache_write": {
+          "title": "Cache Write",
+          "description": "缓存时长 → 用量标签 → 单价。无细分时长写为 \"_\"。",
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        "input": {
+          "title": "Input",
+          "description": "用量标签 → 单价。统一定价写为 \"_\"，按模态区分写具体标签。",
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "output": {
+          "title": "Output",
+          "description": "用量标签 → 单价。统一定价写为 \"_\"，按模态区分写具体标签。",
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      },
+      "required": ["cache_read", "cache_write", "input", "output"],
+      "additionalProperties": false
+    },
+    "ExtendedProfile": {
+      "title": "ExtendedProfile",
+      "description": "长上下文特殊计费配置。输入总量（含缓存读写）达到阈值时整笔套用该档位。",
+      "type": "object",
+      "properties": {
+        "threshold": {
+          "title": "Threshold",
+          "description": "官方精确整数阈值，严禁取整。",
+          "type": "integer",
+          "minimum": 1
+        },
+        "tier": {
+          "$ref": "#/$defs/PriceTier"
+        }
+      },
+      "required": ["threshold", "tier"],
+      "additionalProperties": false
+    },
+    "PeakProfile": {
+      "title": "PeakProfile",
+      "description": "高峰时段动态倍率配置。",
+      "type": "object",
+      "properties": {
+        "condition": {
+          "$ref": "#/$defs/PeakCondition"
+        },
+        "multiplier": {
+          "title": "Multiplier",
+          "description": "正浮点倍率，例如高峰 2 倍记为 2，半价记为 0.5。",
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      },
+      "required": ["condition", "multiplier"],
+      "additionalProperties": false
+    },
+    "PeakCondition": {
+      "title": "PeakCondition",
+      "type": "object",
+      "properties": {
+        "timezone": {
+          "$ref": "#/$defs/TimeZone"
+        },
+        "weekdays": {
+          "title": "Weekdays",
+          "description": "true 为仅工作日（周一至周五）生效，false 为每日生效。",
+          "type": "boolean"
+        },
+        "windows": {
+          "title": "Windows",
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/TimeWindow"
+          },
+          "minItems": 1
+        }
+      },
+      "required": ["timezone", "weekdays", "windows"],
+      "additionalProperties": false
+    },
+    "TimeWindow": {
+      "title": "TimeWindow",
+      "description": "本地时间区间（左闭右开，start <= time < end），格式为 HH:MM 或 HH:MM:SS，同一天内 start < end 且不重叠。",
+      "type": "object",
+      "properties": {
+        "start": {
+          "title": "Start",
+          "type": "string",
+          "pattern": "^(?:[01]\\d|2[0-3]):[0-5]\\d(?::[0-5]\\d)?$"
+        },
+        "end": {
+          "title": "End",
+          "type": "string",
+          "pattern": "^(?:[01]\\d|2[0-3]):[0-5]\\d(?::[0-5]\\d)?$"
+        }
+      },
+      "required": ["start", "end"],
+      "additionalProperties": false
+    }
+  }
+}
