@@ -1368,6 +1368,38 @@
           "cache_write": {}
         }
       }
+    },
+    "minimax-m3.1-flash": {
+      "id": "minimax-m3.1-flash",
+      "label": "MiniMax M3.1 Flash",
+      "window": 1000000,
+      "modalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "price": {
+        "currency": "CNY",
+        "standard": {
+          "input": {
+            "_": 1000
+          },
+          "output": {
+            "_": 4000
+          },
+          "cache_read": {
+            "_": 100
+          },
+          "cache_write": {}
+        }
+      }
     }
   }
 }

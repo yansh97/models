@@ -30,6 +30,7 @@
 | **Kimi** (Moonshot) | [Kimi Platform Pricing](https://platform.kimi.com/docs/pricing/chat#模型定价) | Kimi ≥ K3 | `Kimi K3` |
 | **GLM** (智谱) | [BigModel Platform Pricing](https://docs.bigmodel.cn/cn/guide/start/pricing) | GLM ≥ 5.3；仅旗舰模型和文本模型 | `GLM 5.3`、`GLM 5.3 Flash`、`GLM 5.3 FlashX` |
 | **Qwen** (千问) | [Qwen Platform Pricing](https://platform.qianwenai.com/pricing/api) | Qwen ≥ 3.8；Max、Plus、Flash 等非参数规模的文本生成版本 | `Qwen 3.8 Max`、`Qwen 3.8 Flash` |
+| **MiniMax** | [MiniMax Platform Pricing](https://platform.minimax.cn/docs/pricing/overview) | MiniMax ≥ M3.1；仅语言模型，按量计费的标准档（Standard），排除优先服务与套餐价；字典键与 `id` 将官方模型 ID 转为纯小写，`label` 保留官方大小写 | `MiniMax M3.1 Flash` |
 
 > **关于活动与排除项**：
 > - **已落入表格的活动价**：若官方定价页已直接更新价格表格（如标注“即日起至某日特惠价/免费”，且当前表格已生效），直接以当前表格展示的价格收录。
@@ -46,7 +47,7 @@
 | 字段 | 类型 | 说明与规范 |
 | :--- | :--- | :--- |
 | `id` | `string` | 唯一规范标识，全小写，与字典键严格一致（如 `gpt-6-astra`、`claude-sonnet-5-5`）。 |
-| `label` | `string` | 官方展示名称，保留官方品牌大小写（如 `GPT 6 Astra`、`Claude Sonnet 5.5`）。 |
+| `label` | `string` | 官方展示名称，保留官方品牌大小写；所有模型的 `label` 均不含连字符（`-`），官方名称中的连字符统一替换为空格（如 `GPT 6 Astra`、`Claude Sonnet 5.5`、`MiniMax M3.1 Flash`）。 |
 | `window` | `integer \| null` | 上下文总窗口近似正整数（便于 K/M 展示，如 1M 记为 `1000000`，500K 记为 `500000`）。纯生图或未知时为 `null`；**计费阈值不取整**。若取整后窗口小于扩展阈值，先确认取值，不改写阈值。 |
 | `modalities` | `string[]` | 支持的输入模态列表，常用 `text`、`image`、`audio`、`video`、`pdf`。按官方标明填写。 |
 | `efforts` | `string[] \| null` | 官方支持调节的推理强度档位。不适用或固定时显式为 `null`，严禁写成 `[]`。常用：`none`、`minimal`、`low`、`medium`、`high`、`xhigh`、`max`。 |
@@ -104,5 +105,5 @@
      ```bash
      uv run --no-project --with check-jsonschema check-jsonschema --schemafile catalog.schema.json catalog.json
      ```
-   - **语义规则复核**：字典键与 `id` 一致小写；`window` 仅合理取整而 `threshold` 保持精确原值；时段顺序无重叠；复算样本费用（`Token 数 × 整数单价` 之和乘倍率后除以 $10^9$）。
+   - **语义规则复核**：字典键与 `id` 一致小写，所有 `label` 均不含连字符（`-`）；`window` 仅合理取整而 `threshold` 保持精确原值；时段顺序无重叠；复算样本费用（`Token 数 × 整数单价` 之和乘倍率后除以 $10^9$）。
 4. **交付与汇报**：检查 `git diff`，简要汇报更新模型、核验日期、官方链接；遇规则重大变更或 Schema 无法表达时，主动向用户说明并确认方案。
