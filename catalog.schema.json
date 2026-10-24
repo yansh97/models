@@ -132,7 +132,7 @@
       "properties": {
         "cache_read": {
           "title": "Cache Read",
-          "description": "用量标签 → 单价。空对象表示无此项，0 表示明确免费。",
+          "description": "模态标签 → 单价。统一定价写为 \"_\"，按模态区分写具体模态名。空对象表示无此项，0 表示明确免费。",
           "type": "object",
           "additionalProperties": {
             "type": "integer",
@@ -141,19 +141,16 @@
         },
         "cache_write": {
           "title": "Cache Write",
-          "description": "缓存时长 → 用量标签 → 单价。无细分时长写为 \"_\"。",
+          "description": "模态标签 → 单价。统一定价写为 \"_\"，按模态区分写具体模态名。不区分缓存有效期档位，官方提供多档时收录最低档。空对象表示无此项，0 表示明确免费。",
           "type": "object",
           "additionalProperties": {
-            "type": "object",
-            "additionalProperties": {
-              "type": "integer",
-              "minimum": 0
-            }
+            "type": "integer",
+            "minimum": 0
           }
         },
         "input": {
           "title": "Input",
-          "description": "用量标签 → 单价。统一定价写为 \"_\"，按模态区分写具体标签。",
+          "description": "模态标签 → 单价。统一定价写为 \"_\"，按模态区分写具体模态名。空对象表示无此项，0 表示明确免费。",
           "type": "object",
           "additionalProperties": {
             "type": "integer",
@@ -162,7 +159,7 @@
         },
         "output": {
           "title": "Output",
-          "description": "用量标签 → 单价。统一定价写为 \"_\"，按模态区分写具体标签。",
+          "description": "模态标签 → 单价。统一定价写为 \"_\"，按模态区分写具体模态名。空对象表示无此项，0 表示明确免费。",
           "type": "object",
           "additionalProperties": {
             "type": "integer",
