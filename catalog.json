@@ -100,6 +100,57 @@
         }
       }
     },
+    "gpt-6.1-terra": {
+      "id": "gpt-6.1-terra",
+      "label": "GPT 6.1 Terra",
+      "window": 1000000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": [
+        "none",
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "_": 1000
+          },
+          "output": {
+            "_": 5000
+          },
+          "cache_read": {
+            "_": 50
+          },
+          "cache_write": {
+            "_": 1250
+          }
+        },
+        "extended": {
+          "threshold": 272000,
+          "tier": {
+            "input": {
+              "_": 2000
+            },
+            "output": {
+              "_": 7500
+            },
+            "cache_read": {
+              "_": 100
+            },
+            "cache_write": {
+              "_": 2500
+            }
+          }
+        }
+      }
+    },
     "gpt-6-sol": {
       "id": "gpt-6-sol",
       "label": "GPT 6 Sol",
