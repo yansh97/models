@@ -25,11 +25,9 @@
 | **GPT Image** (OpenAI) | [OpenAI · Image generation](https://developers.openai.com/api/docs/pricing#image-generation) | GPT Image ≥ 2；Image generation models 的 Standard 档，展开 All models | `GPT Image 2`、`GPT Image 2.5` (Flare, Sunburst) |
 | **Gemini** (Google) | [Gemini Platform Pricing](https://aistudio.google.com/docs/pricing) | Gemini ≥ 3.8；付费层级（Paid Tier）的 Standard 档 | `Gemini 3.8 Flash` 等旗舰与主流调用档位 |
 | **Grok** (xAI) | [xAI Platform Pricing](https://docs.x.ai/developers/pricing) | Grok ≥ 4.5；仅 Text API | `Grok 4.5`、`Grok 4.6`、`Grok 4.7` |
-| **Muse** (Meta) | [Meta Platform Pricing](https://dev.meta.ai/docs/pricing-rate-limits) | 文本模型的 Standard 档 | `Muse Spark` (1.1, 1.2, 1.3) |
 | **DeepSeek** | [DeepSeek Platform Pricing](https://api-docs.deepseek.com/zh-cn/quick_start/pricing/) | 全部模型 | `DeepSeek Flash`、`DeepSeek V4 Pro` |
 | **Kimi** (Moonshot) | [Kimi Platform Pricing](https://platform.kimi.com/docs/pricing/chat#模型定价) | Kimi ≥ K3 | `Kimi K3` |
 | **GLM** (智谱) | [BigModel Platform Pricing](https://docs.bigmodel.cn/cn/guide/start/pricing) | GLM ≥ 5.3；仅旗舰模型和文本模型 | `GLM 5.3`、`GLM 5.3 Flash`、`GLM 5.3 FlashX` |
-| **Qwen** (千问) | [Qwen Platform Pricing](https://platform.qianwenai.com/pricing/api) | Qwen ≥ 3.8；Max、Plus、Flash 等非参数规模的文本生成版本 | `Qwen 3.8 Max`、`Qwen 3.8 Flash` |
 | **MiniMax** | [MiniMax Platform Pricing](https://platform.minimax.cn/docs/pricing/overview) | MiniMax ≥ M3.1；仅语言模型，按量计费的标准档（Standard），排除优先服务与套餐价；字典键与 `id` 将官方模型 ID 转为纯小写，`label` 保留官方大小写 | `MiniMax M3.1 Flash` |
 
 > **关于活动与排除项**：
@@ -66,7 +64,7 @@
 每个价格档位完整包含 `cache_read`、`cache_write`、`input`、`output` 四项：
 
 - 四项格式均为“模态标签 → 单价”。统一定价写为 `"_"`，按模态区分写具体模态名（如 `"text"`、`"image"`）。
-- **只考虑隐式缓存**：`cache_read`、`cache_write` 只收录隐式（自动）缓存价格；官方另列显式缓存时（如 Qwen 的“显式缓存创建/命中”、Anthropic 的 `cache_control` 断点）不予采用，仅有显式计费的项记为 `{}`。
+- **只考虑隐式缓存**：`cache_read`、`cache_write` 仅记录隐式（自动）缓存价格；显式缓存价格不予收录，仅支持显式缓存计费的项记为 `{}`。
 - **缓存有效期档位**：`cache_write` 不区分缓存有效期；官方提供多档时（如 `5m`/`1h`、`30m`/`12h`），收录最低档（通常为最短有效期）的单价。
 - **`{}` 与 `0` 的严格区分**：`{}` 表示不支持该计费特性，`0` 表示已确认免费（含官方标注且已生效的“限时免费”），二者不能混淆。
 
