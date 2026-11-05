@@ -699,7 +699,11 @@
         "text",
         "image"
       ],
-      "efforts": null,
+      "efforts": [
+        "low",
+        "medium",
+        "high"
+      ],
       "price": {
         "currency": "USD",
         "standard": {
@@ -726,7 +730,13 @@
         "text",
         "image"
       ],
-      "efforts": null,
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
       "price": {
         "currency": "USD",
         "standard": {
@@ -753,7 +763,13 @@
         "text",
         "image"
       ],
-      "efforts": null,
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
       "price": {
         "currency": "USD",
         "standard": {
@@ -783,7 +799,9 @@
       "efforts": [
         "low",
         "medium",
-        "high"
+        "high",
+        "xhigh",
+        "max"
       ],
       "price": {
         "currency": "USD",
@@ -814,7 +832,9 @@
       "efforts": [
         "low",
         "medium",
-        "high"
+        "high",
+        "xhigh",
+        "max"
       ],
       "price": {
         "currency": "USD",

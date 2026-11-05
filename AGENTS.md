@@ -48,7 +48,7 @@
 | `label` | `string` | 官方展示名称，保留官方品牌大小写；所有模型的 `label` 均不含连字符（`-`），官方名称中的连字符统一替换为空格（如 `GPT 6 Astra`、`Claude Sonnet 5.5`）。 |
 | `window` | `integer \| null` | 上下文总窗口近似正整数（便于 K/M 展示，如 1M 记为 `1000000`，500K 记为 `500000`）。纯生图或未知时为 `null`；**计费阈值不取整**。若取整后窗口小于扩展阈值，先确认取值，不改写阈值。 |
 | `modalities` | `string[]` | 支持的输入模态列表，常用 `text`、`image`、`audio`、`video`、`pdf`。按官方标明填写。 |
-| `efforts` | `string[] \| null` | 官方支持调节的推理强度档位。不适用或固定时显式为 `null`，严禁写成 `[]`。常用：`none`、`minimal`、`low`、`medium`、`high`、`xhigh`、`max`。 |
+| `efforts` | `string[] \| null` | 官方支持调节的生成档位：文本生成模型记录推理强度档位，图像生成模型记录图像质量档位。仅收录明确档位，不含 `auto` 等自动选择值。不适用或固定时显式为 `null`，严禁写成 `[]`。常用：`none`、`minimal`、`low`、`medium`、`high`、`xhigh`、`max`。 |
 | `price` | `object` | 计费对象，包含 `currency`、`standard`，可选 `extended`、`peak`。 |
 
 ### 3.2 计费单位换算
