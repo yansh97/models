@@ -772,6 +772,68 @@
         }
       }
     },
+    "gpt-image-2.6-sunburst": {
+      "id": "gpt-image-2.6-sunburst",
+      "label": "GPT Image 2.6 Sunburst",
+      "window": null,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "text": 5000,
+            "image": 8000
+          },
+          "output": {
+            "_": 30000
+          },
+          "cache_read": {
+            "text": 1250,
+            "image": 2000
+          },
+          "cache_write": {}
+        }
+      }
+    },
+    "gpt-image-2.6-flare": {
+      "id": "gpt-image-2.6-flare",
+      "label": "GPT Image 2.6 Flare",
+      "window": null,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "text": 5000,
+            "image": 8000
+          },
+          "output": {
+            "_": 30000
+          },
+          "cache_read": {
+            "text": 1250,
+            "image": 2000
+          },
+          "cache_write": {}
+        }
+      }
+    },
     "grok-4.6": {
       "id": "grok-4.6",
       "label": "Grok 4.6",
