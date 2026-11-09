@@ -20,13 +20,13 @@
 
 | 系列 / 厂商 | 官方来源 | 收录范围与版本下限 | 典型型号示例 |
 | :--- | :--- | :--- | :--- |
-| **Claude** (Anthropic) | [Claude Platform Pricing](https://platform.claude.com/docs/en/about-claude/pricing) | Claude Fable ≥ 5、Claude Opus ≥ 5、Claude Sonnet ≥ 5、Claude Haiku ≥ 5 | `Claude Fable` (5, 5.1)、`Claude Opus` (5, 5.5)、`Claude Sonnet` (5, 5.5)、`Claude Haiku` (5.5) |
-| **GPT** (OpenAI) | [OpenAI · Text tokens](https://developers.openai.com/api/docs/pricing#text-tokens) | GPT ≥ 5.6；Flagship models 的 Standard 档，展开 All models，排除 Cyber models | `GPT 5.6` (Sol, Terra, Luna)、`GPT 6` (Astra, Sol, Luna)、`GPT 6.1` (Sol) |
-| **GPT Image** (OpenAI) | [OpenAI · Image generation](https://developers.openai.com/api/docs/pricing#image-generation) | GPT Image ≥ 2；Image generation models 的 Standard 档，展开 All models | `GPT Image 2`、`GPT Image 2.5` (Flare, Sunburst) |
-| **Gemini** (Google) | [Gemini Platform Pricing](https://aistudio.google.com/docs/pricing) | Gemini ≥ 3.8；付费层级（Paid Tier）的 Standard 档 | `Gemini 3.8 Flash` 等旗舰与主流调用档位 |
-| **Grok** (xAI) | [xAI Platform Pricing](https://docs.x.ai/developers/pricing) | Grok ≥ 4.5；仅 Text API | `Grok 4.5`、`Grok 4.6`、`Grok 4.7` |
+| **Claude** (Anthropic) | [Claude Platform Pricing](https://platform.claude.com/docs/en/about-claude/pricing) | Claude Fable ≥ 5.5、Claude Opus ≥ 5.5、Claude Sonnet ≥ 5.5、Claude Haiku ≥ 5.5 | `Claude Opus` (5.5)、`Claude Sonnet` (5.5)、`Claude Haiku` (5.5) |
+| **GPT** (OpenAI) | [OpenAI · Text tokens](https://developers.openai.com/api/docs/pricing#text-tokens) | GPT ≥ 6；Flagship models 的 Standard 档，展开 All models，排除 Cyber models | `GPT 6` (Astra, Sol, Luna)、`GPT 6.1` (Sol) |
+| **GPT Image** (OpenAI) | [OpenAI · Image generation](https://developers.openai.com/api/docs/pricing#image-generation) | GPT Image ≥ 2.6；Image generation models 的 Standard 档，展开 All models | `GPT Image 2.6` (Flare, Sunburst) |
+| **Gemini** (Google) | [Gemini Platform Pricing](https://aistudio.google.com/docs/pricing) | Gemini ≥ 4；付费层级（Paid Tier）的 Standard 档 | `Gemini 4 Argon` 等旗舰与主流调用档位 |
+| **Grok** (xAI) | [xAI Platform Pricing](https://docs.x.ai/developers/pricing) | Grok ≥ 4.7；仅 Text API | `Grok 4.7` |
 | **DeepSeek** | [DeepSeek Platform Pricing](https://api-docs.deepseek.com/zh-cn/quick_start/pricing/) | 全部模型 | `DeepSeek Flash`、`DeepSeek V4 Pro` |
-| **Kimi** (Moonshot) | [Kimi Platform Pricing](https://platform.kimi.com/docs/pricing/chat#模型定价) | Kimi ≥ K3 | `Kimi K3` |
+| **Kimi** (Moonshot) | [Kimi Platform Pricing](https://platform.kimi.com/docs/pricing/chat#模型定价) | Kimi ≥ K3.1 | `Kimi K3.1 Pro`、`Kimi K3.1 Pro Highspeed` |
 | **GLM** (智谱) | [BigModel Platform Pricing](https://docs.bigmodel.cn/cn/guide/start/pricing) | GLM ≥ 5.3；仅旗舰模型和文本模型 | `GLM 5.3`、`GLM 5.3 Flash`、`GLM 5.3 FlashX` |
 
 > **关于活动与排除项**：
