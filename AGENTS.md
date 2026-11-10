@@ -20,7 +20,7 @@
 
 | 系列 / 厂商 | 官方来源 | 收录范围与版本下限 | 典型型号示例 |
 | :--- | :--- | :--- | :--- |
-| **Claude** (Anthropic) | [Claude Platform Pricing](https://platform.claude.com/docs/en/about-claude/pricing) | Claude Fable ≥ 5.5、Claude Opus ≥ 5.5、Claude Sonnet ≥ 5.5、Claude Haiku ≥ 5.5 | `Claude Opus` (5.5)、`Claude Sonnet` (5.5)、`Claude Haiku` (5.5) |
+| **Claude** (Anthropic) | [Claude Platform Pricing](https://platform.claude.com/docs/en/about-claude/pricing) | Claude Fable ≥ 5.2、Claude Opus ≥ 5.2、Claude Sonnet ≥ 5.2、Claude Haiku ≥ 5.2 | `Claude Fable` (5.2)、`Claude Opus` (5.5)、`Claude Sonnet` (5.5)、`Claude Haiku` (5.5) |
 | **GPT** (OpenAI) | [OpenAI · Text tokens](https://developers.openai.com/api/docs/pricing#text-tokens) | GPT ≥ 6；Flagship models 的 Standard 档，展开 All models，排除 Cyber models | `GPT 6` (Astra, Sol, Luna)、`GPT 6.1` (Sol) |
 | **GPT Image** (OpenAI) | [OpenAI · Image generation](https://developers.openai.com/api/docs/pricing#image-generation) | GPT Image ≥ 2.6；Image generation models 的 Standard 档，展开 All models | `GPT Image 2.6` (Flare, Sunburst) |
 | **Gemini** (Google) | [Gemini Platform Pricing](https://aistudio.google.com/docs/pricing) | Gemini ≥ 4；付费层级（Paid Tier）的 Standard 档 | `Gemini 4 Argon` 等旗舰与主流调用档位 |
