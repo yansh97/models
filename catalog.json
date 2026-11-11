@@ -766,6 +766,38 @@
         }
       }
     },
+    "gemini-4-carbon": {
+      "id": "gemini-4-carbon",
+      "label": "Gemini 4 Carbon",
+      "window": 1000000,
+      "modalities": [
+        "text",
+        "image",
+        "audio",
+        "video",
+        "pdf"
+      ],
+      "efforts": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "_": 2000
+          },
+          "output": {
+            "_": 10000
+          },
+          "cache_read": {
+            "_": 100
+          },
+          "cache_write": {}
+        }
+      }
+    },
     "gemini-4-argon": {
       "id": "gemini-4-argon",
       "label": "Gemini 4 Argon",
