@@ -572,51 +572,6 @@
         }
       }
     },
-    "grok-4.7": {
-      "id": "grok-4.7",
-      "label": "Grok 4.7",
-      "window": 500000,
-      "modalities": [
-        "text",
-        "image"
-      ],
-      "efforts": [
-        "low",
-        "medium",
-        "high",
-        "xhigh"
-      ],
-      "price": {
-        "currency": "USD",
-        "standard": {
-          "input": {
-            "_": 2000
-          },
-          "output": {
-            "_": 6000
-          },
-          "cache_read": {
-            "_": 500
-          },
-          "cache_write": {}
-        },
-        "extended": {
-          "threshold": 200000,
-          "tier": {
-            "input": {
-              "_": 4000
-            },
-            "output": {
-              "_": 12000
-            },
-            "cache_read": {
-              "_": 1000
-            },
-            "cache_write": {}
-          }
-        }
-      }
-    },
     "claude-fable-5-2": {
       "id": "claude-fable-5-2",
       "label": "Claude Fable 5.2",
