@@ -784,6 +784,39 @@
           "cache_write": {}
         }
       }
+    },
+    "gemini-4-hydrogen": {
+      "id": "gemini-4-hydrogen",
+      "label": "Gemini 4 Hydrogen",
+      "window": 1000000,
+      "modalities": [
+        "text",
+        "image",
+        "audio",
+        "video",
+        "pdf"
+      ],
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "_": 1500
+          },
+          "output": {
+            "_": 7500
+          },
+          "cache_read": {
+            "_": 75
+          },
+          "cache_write": {}
+        }
+      }
     }
   }
 }
