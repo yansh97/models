@@ -1,0 +1,955 @@
+{
+  "models": {
+    "gpt-6.2-astra": {
+      "id": "gpt-6.2-astra",
+      "label": "GPT 6.2 Astra",
+      "window": 1000000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "_": 8000
+          },
+          "output": {
+            "_": 40000
+          },
+          "cache_read": {
+            "_": 400
+          },
+          "cache_write": {
+            "_": 10000
+          }
+        },
+        "extended": {
+          "threshold": 272000,
+          "tier": {
+            "input": {
+              "_": 16000
+            },
+            "output": {
+              "_": 60000
+            },
+            "cache_read": {
+              "_": 800
+            },
+            "cache_write": {
+              "_": 20000
+            }
+          }
+        }
+      }
+    },
+    "gpt-6.2-sol": {
+      "id": "gpt-6.2-sol",
+      "label": "GPT 6.2 Sol",
+      "window": 1000000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "_": 2000
+          },
+          "output": {
+            "_": 10000
+          },
+          "cache_read": {
+            "_": 100
+          },
+          "cache_write": {
+            "_": 2500
+          }
+        },
+        "extended": {
+          "threshold": 272000,
+          "tier": {
+            "input": {
+              "_": 4000
+            },
+            "output": {
+              "_": 15000
+            },
+            "cache_read": {
+              "_": 200
+            },
+            "cache_write": {
+              "_": 5000
+            }
+          }
+        }
+      }
+    },
+    "gpt-6-astra": {
+      "id": "gpt-6-astra",
+      "label": "GPT 6 Astra",
+      "window": 1000000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "_": 10000
+          },
+          "output": {
+            "_": 50000
+          },
+          "cache_read": {
+            "_": 1000
+          },
+          "cache_write": {
+            "_": 12500
+          }
+        },
+        "extended": {
+          "threshold": 272000,
+          "tier": {
+            "input": {
+              "_": 20000
+            },
+            "output": {
+              "_": 75000
+            },
+            "cache_read": {
+              "_": 2000
+            },
+            "cache_write": {
+              "_": 25000
+            }
+          }
+        }
+      }
+    },
+    "gpt-6.1-sol": {
+      "id": "gpt-6.1-sol",
+      "label": "GPT 6.1 Sol",
+      "window": 1000000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "_": 2000
+          },
+          "output": {
+            "_": 10000
+          },
+          "cache_read": {
+            "_": 100
+          },
+          "cache_write": {
+            "_": 2500
+          }
+        },
+        "extended": {
+          "threshold": 272000,
+          "tier": {
+            "input": {
+              "_": 4000
+            },
+            "output": {
+              "_": 15000
+            },
+            "cache_read": {
+              "_": 200
+            },
+            "cache_write": {
+              "_": 5000
+            }
+          }
+        }
+      }
+    },
+    "gpt-6.1-terra": {
+      "id": "gpt-6.1-terra",
+      "label": "GPT 6.1 Terra",
+      "window": 1000000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": [
+        "none",
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "_": 1000
+          },
+          "output": {
+            "_": 5000
+          },
+          "cache_read": {
+            "_": 50
+          },
+          "cache_write": {
+            "_": 1250
+          }
+        },
+        "extended": {
+          "threshold": 272000,
+          "tier": {
+            "input": {
+              "_": 2000
+            },
+            "output": {
+              "_": 7500
+            },
+            "cache_read": {
+              "_": 100
+            },
+            "cache_write": {
+              "_": 2500
+            }
+          }
+        }
+      }
+    },
+    "gpt-6-sol": {
+      "id": "gpt-6-sol",
+      "label": "GPT 6 Sol",
+      "window": 1000000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": [
+        "none",
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "_": 2000
+          },
+          "output": {
+            "_": 10000
+          },
+          "cache_read": {
+            "_": 200
+          },
+          "cache_write": {
+            "_": 2500
+          }
+        },
+        "extended": {
+          "threshold": 272000,
+          "tier": {
+            "input": {
+              "_": 4000
+            },
+            "output": {
+              "_": 15000
+            },
+            "cache_read": {
+              "_": 400
+            },
+            "cache_write": {
+              "_": 5000
+            }
+          }
+        }
+      }
+    },
+    "gpt-6-luna": {
+      "id": "gpt-6-luna",
+      "label": "GPT 6 Luna",
+      "window": 1000000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": [
+        "none",
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "_": 100
+          },
+          "output": {
+            "_": 500
+          },
+          "cache_read": {
+            "_": 10
+          },
+          "cache_write": {
+            "_": 125
+          }
+        },
+        "extended": {
+          "threshold": 272000,
+          "tier": {
+            "input": {
+              "_": 200
+            },
+            "output": {
+              "_": 750
+            },
+            "cache_read": {
+              "_": 20
+            },
+            "cache_write": {
+              "_": 250
+            }
+          }
+        }
+      }
+    },
+    "deepseek-flash": {
+      "id": "deepseek-flash",
+      "label": "DeepSeek Flash",
+      "window": 1000000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": [
+        "none",
+        "low",
+        "high",
+        "max"
+      ],
+      "price": {
+        "currency": "CNY",
+        "standard": {
+          "input": {
+            "_": 1000
+          },
+          "output": {
+            "_": 4000
+          },
+          "cache_read": {
+            "_": 20
+          },
+          "cache_write": {}
+        },
+        "peak": {
+          "condition": {
+            "timezone": "Asia/Shanghai",
+            "weekdays": true,
+            "windows": [
+              {
+                "start": "09:00",
+                "end": "12:00"
+              },
+              {
+                "start": "14:00",
+                "end": "18:00"
+              }
+            ]
+          },
+          "multiplier": 2
+        }
+      }
+    },
+    "deepseek-v4-pro": {
+      "id": "deepseek-v4-pro",
+      "label": "DeepSeek V4 Pro",
+      "window": 1000000,
+      "modalities": [
+        "text"
+      ],
+      "efforts": [
+        "none",
+        "low",
+        "high",
+        "max"
+      ],
+      "price": {
+        "currency": "CNY",
+        "standard": {
+          "input": {
+            "_": 4500
+          },
+          "output": {
+            "_": 13500
+          },
+          "cache_read": {
+            "_": 150
+          },
+          "cache_write": {}
+        },
+        "peak": {
+          "condition": {
+            "timezone": "Asia/Shanghai",
+            "weekdays": true,
+            "windows": [
+              {
+                "start": "09:00",
+                "end": "12:00"
+              },
+              {
+                "start": "14:00",
+                "end": "18:00"
+              }
+            ]
+          },
+          "multiplier": 2
+        }
+      }
+    },
+    "kimi-k3.1-pro": {
+      "id": "kimi-k3.1-pro",
+      "label": "Kimi K3.1 Pro",
+      "window": 1000000,
+      "modalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "efforts": [
+        "low",
+        "high",
+        "max"
+      ],
+      "price": {
+        "currency": "CNY",
+        "standard": {
+          "input": {
+            "_": 13000
+          },
+          "output": {
+            "_": 68000
+          },
+          "cache_read": {
+            "_": 1300
+          },
+          "cache_write": {
+            "_": 13000
+          }
+        }
+      }
+    },
+    "kimi-k3.1-pro-highspeed": {
+      "id": "kimi-k3.1-pro-highspeed",
+      "label": "Kimi K3.1 Pro Highspeed",
+      "window": 1000000,
+      "modalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "efforts": [
+        "low",
+        "high",
+        "max"
+      ],
+      "price": {
+        "currency": "CNY",
+        "standard": {
+          "input": {
+            "_": 26000
+          },
+          "output": {
+            "_": 136000
+          },
+          "cache_read": {
+            "_": 1300
+          },
+          "cache_write": {
+            "_": 26000
+          }
+        }
+      }
+    },
+    "glm-5.3": {
+      "id": "glm-5.3",
+      "label": "GLM 5.3",
+      "window": 1000000,
+      "modalities": [
+        "text"
+      ],
+      "efforts": [
+        "low",
+        "high",
+        "max"
+      ],
+      "price": {
+        "currency": "CNY",
+        "standard": {
+          "input": {
+            "_": 8000
+          },
+          "output": {
+            "_": 28000
+          },
+          "cache_read": {
+            "_": 2000
+          },
+          "cache_write": {
+            "_": 0
+          }
+        }
+      }
+    },
+    "glm-5.3-flash": {
+      "id": "glm-5.3-flash",
+      "label": "GLM 5.3 Flash",
+      "window": 1000000,
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "efforts": [
+        "low",
+        "high",
+        "max"
+      ],
+      "price": {
+        "currency": "CNY",
+        "standard": {
+          "input": {
+            "_": 800
+          },
+          "output": {
+            "_": 2800
+          },
+          "cache_read": {
+            "_": 230
+          },
+          "cache_write": {
+            "_": 0
+          }
+        }
+      }
+    },
+    "glm-5.3-flashx": {
+      "id": "glm-5.3-flashx",
+      "label": "GLM 5.3 FlashX",
+      "window": 1000000,
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "efforts": [
+        "low",
+        "high",
+        "max"
+      ],
+      "price": {
+        "currency": "CNY",
+        "standard": {
+          "input": {
+            "_": 2000
+          },
+          "output": {
+            "_": 7000
+          },
+          "cache_read": {
+            "_": 570
+          },
+          "cache_write": {
+            "_": 0
+          }
+        }
+      }
+    },
+    "gpt-image-2.6-sunburst": {
+      "id": "gpt-image-2.6-sunburst",
+      "label": "GPT Image 2.6 Sunburst",
+      "window": null,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "text": 5000,
+            "image": 8000
+          },
+          "output": {
+            "_": 30000
+          },
+          "cache_read": {
+            "text": 1250,
+            "image": 2000
+          },
+          "cache_write": {}
+        }
+      }
+    },
+    "gpt-image-2.6-flare": {
+      "id": "gpt-image-2.6-flare",
+      "label": "GPT Image 2.6 Flare",
+      "window": null,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "text": 5000,
+            "image": 8000
+          },
+          "output": {
+            "_": 30000
+          },
+          "cache_read": {
+            "text": 1250,
+            "image": 2000
+          },
+          "cache_write": {}
+        }
+      }
+    },
+    "claude-fable-5-2": {
+      "id": "claude-fable-5-2",
+      "label": "Claude Fable 5.2",
+      "window": 1000000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "_": 8000
+          },
+          "output": {
+            "_": 40000
+          },
+          "cache_read": {
+            "_": 200
+          },
+          "cache_write": {
+            "_": 10000
+          }
+        }
+      }
+    },
+    "claude-opus-5-5": {
+      "id": "claude-opus-5-5",
+      "label": "Claude Opus 5.5",
+      "window": 1000000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "_": 4000
+          },
+          "output": {
+            "_": 20000
+          },
+          "cache_read": {
+            "_": 200
+          },
+          "cache_write": {
+            "_": 5000
+          }
+        }
+      }
+    },
+    "claude-sonnet-5-5": {
+      "id": "claude-sonnet-5-5",
+      "label": "Claude Sonnet 5.5",
+      "window": 1000000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "_": 2000
+          },
+          "output": {
+            "_": 10000
+          },
+          "cache_read": {
+            "_": 100
+          },
+          "cache_write": {
+            "_": 2500
+          }
+        }
+      }
+    },
+    "claude-haiku-5-5": {
+      "id": "claude-haiku-5-5",
+      "label": "Claude Haiku 5.5",
+      "window": 1000000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "_": 100
+          },
+          "output": {
+            "_": 500
+          },
+          "cache_read": {
+            "_": 10
+          },
+          "cache_write": {
+            "_": 125
+          }
+        },
+        "extended": {
+          "threshold": 100000,
+          "tier": {
+            "input": {
+              "_": 500
+            },
+            "output": {
+              "_": 2500
+            },
+            "cache_read": {
+              "_": 50
+            },
+            "cache_write": {
+              "_": 625
+            }
+          }
+        }
+      }
+    },
+    "gemini-4-carbon": {
+      "id": "gemini-4-carbon",
+      "label": "Gemini 4 Carbon",
+      "window": 1000000,
+      "modalities": [
+        "text",
+        "image",
+        "audio",
+        "video",
+        "pdf"
+      ],
+      "efforts": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "_": 2000
+          },
+          "output": {
+            "_": 10000
+          },
+          "cache_read": {
+            "_": 100
+          },
+          "cache_write": {}
+        }
+      }
+    },
+    "gemini-4-argon": {
+      "id": "gemini-4-argon",
+      "label": "Gemini 4 Argon",
+      "window": 1000000,
+      "modalities": [
+        "text",
+        "image",
+        "audio",
+        "video",
+        "pdf"
+      ],
+      "efforts": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "_": 2000
+          },
+          "output": {
+            "_": 10000
+          },
+          "cache_read": {
+            "_": 100
+          },
+          "cache_write": {}
+        }
+      }
+    },
+    "gemini-4-hydrogen": {
+      "id": "gemini-4-hydrogen",
+      "label": "Gemini 4 Hydrogen",
+      "window": 1000000,
+      "modalities": [
+        "text",
+        "image",
+        "audio",
+        "video",
+        "pdf"
+      ],
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "_": 1500
+          },
+          "output": {
+            "_": 7500
+          },
+          "cache_read": {
+            "_": 75
+          },
+          "cache_write": {}
+        }
+      }
+    },
+    "gemini-4-neon": {
+      "id": "gemini-4-neon",
+      "label": "Gemini 4 Neon",
+      "window": 1000000,
+      "modalities": [
+        "text",
+        "image",
+        "audio",
+        "video",
+        "pdf"
+      ],
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh"
+      ],
+      "price": {
+        "currency": "USD",
+        "standard": {
+          "input": {
+            "_": 3000
+          },
+          "output": {
+            "_": 15000
+          },
+          "cache_read": {
+            "_": 150
+          },
+          "cache_write": {}
+        }
+      }
+    }
+  }
+}
