@@ -1,12 +1,12 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Models",
-  "description": "按模型 ID 索引的模型信息与官方 API 价格目录。",
+  "title": "模型目录",
+  "description": "语言模型和图像生成模型的公开规格与官方 API 单价。",
   "type": "object",
   "properties": {
     "models": {
-      "title": "Models",
-      "description": "模型映射字典，键必须为全小写模型 ID，且与对象内部的 id 严格一致。",
+      "title": "模型索引",
+      "description": "以模型 ID 为键的模型记录字典。",
       "type": "object",
       "additionalProperties": {
         "$ref": "#/$defs/Model"
@@ -17,34 +17,30 @@
   "additionalProperties": false,
   "$defs": {
     "Currency": {
-      "title": "Currency",
+      "title": "计价币种",
+      "description": "供应商标价使用的币种。",
       "type": "string",
       "enum": ["USD", "CNY"]
     },
-    "TimeZone": {
-      "title": "TimeZone",
-      "type": "string",
-      "enum": ["Asia/Shanghai"]
-    },
     "Model": {
-      "title": "Model",
+      "title": "模型记录",
       "type": "object",
       "properties": {
         "id": {
-          "title": "Id",
-          "description": "唯一规范标识，全小写，与字典键严格一致。",
+          "title": "模型 ID",
+          "description": "与字典键相同，字母全小写。",
           "type": "string",
           "minLength": 1
         },
         "label": {
-          "title": "Label",
-          "description": "官方展示名称，保留官方品牌大小写；所有模型的 label 均不含连字符（-），官方名称中的连字符统一替换为空格。",
+          "title": "展示名称",
+          "description": "采用官方名称，保留品牌大小写，将连字符（-）替换为空格。",
           "type": "string",
           "minLength": 1
         },
         "window": {
-          "title": "Window",
-          "description": "上下文总窗口近似正整数（便于 K/M 展示，如 1M 记为 1000000）。生图或未知时为 null。",
+          "title": "上下文窗口",
+          "description": "上下文窗口的近似 Token 数，K、M 按十进制换算。纯图像生成模型或窗口未知时填 null。",
           "anyOf": [
             {
               "type": "integer",
@@ -56,8 +52,8 @@
           ]
         },
         "modalities": {
-          "title": "Modalities",
-          "description": "支持的输入模态列表，如 text、image、audio、video、pdf。",
+          "title": "输入模态",
+          "description": "官方支持的输入类型，如 text、image、audio、video、pdf。",
           "type": "array",
           "items": {
             "type": "string",
@@ -66,8 +62,8 @@
           "uniqueItems": true
         },
         "efforts": {
-          "title": "Efforts",
-          "description": "官方支持调节的生成档位：文本生成模型记录推理强度档位，图像生成模型记录图像质量档位。仅收录明确档位，不含 auto 等自动选择值。不适用或固定时为 null，严禁为 []。",
+          "title": "可调档位",
+          "description": "文本模型的推理强度或图像生成模型的图像质量。用非空数组列出官方支持的可调档位，排除 auto 等自动选项。档位固定或不适用时填 null。",
           "anyOf": [
             {
               "type": "array",
@@ -90,30 +86,24 @@
       "additionalProperties": false
     },
     "Price": {
-      "title": "Price",
+      "title": "模型价格",
+      "description": "计价币种、标准档及可选的扩展档。",
       "type": "object",
       "properties": {
         "currency": {
           "$ref": "#/$defs/Currency"
         },
         "standard": {
+          "title": "标准档",
+          "description": "默认使用的完整价格档位。",
           "$ref": "#/$defs/PriceTier"
         },
         "extended": {
+          "title": "扩展档",
+          "description": "长上下文请求的阈值和价格档位。省略或填 null 表示始终使用标准档。",
           "anyOf": [
             {
               "$ref": "#/$defs/ExtendedProfile"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null
-        },
-        "peak": {
-          "anyOf": [
-            {
-              "$ref": "#/$defs/PeakProfile"
             },
             {
               "type": "null"
@@ -126,13 +116,13 @@
       "additionalProperties": false
     },
     "PriceTier": {
-      "title": "PriceTier",
-      "description": "完整价格档位。单价单位为十亿分之一货币单位（即官方每 1M Token 标价 × 1000）。",
+      "title": "价格档位",
+      "description": "每个计费项按模态记录单价，统一定价时以 \"_\" 为键。单价等于官方每百万 Token 标价乘以 1000。{} 表示该项不适用，官方明确免费时将对应单价填为 0。同一档位、模态和计费项按请求时段定价时取最高单价。",
       "type": "object",
       "properties": {
         "cache_read": {
-          "title": "Cache Read",
-          "description": "模态标签 → 单价。统一定价写为 \"_\"，按模态区分写具体模态名。空对象表示无此项，0 表示明确免费。",
+          "title": "缓存读取",
+          "description": "读取隐式缓存的输入 Token 单价。仅支持显式缓存读取时填 {}。",
           "type": "object",
           "additionalProperties": {
             "type": "integer",
@@ -140,8 +130,8 @@
           }
         },
         "cache_write": {
-          "title": "Cache Write",
-          "description": "模态标签 → 单价。统一定价写为 \"_\"，按模态区分写具体模态名。不区分缓存有效期档位，官方提供多档时收录最低档。空对象表示无此项，0 表示明确免费。",
+          "title": "缓存写入",
+          "description": "写入隐式缓存的输入 Token 单价，按缓存有效期分档时取最低单价。仅支持显式缓存写入时填 {}。",
           "type": "object",
           "additionalProperties": {
             "type": "integer",
@@ -149,8 +139,8 @@
           }
         },
         "input": {
-          "title": "Input",
-          "description": "模态标签 → 单价。统一定价写为 \"_\"，按模态区分写具体模态名。空对象表示无此项，0 表示明确免费。",
+          "title": "普通输入",
+          "description": "扣除单独计价的缓存读取和写入用量后，其余输入 Token 的单价。",
           "type": "object",
           "additionalProperties": {
             "type": "integer",
@@ -158,8 +148,8 @@
           }
         },
         "output": {
-          "title": "Output",
-          "description": "模态标签 → 单价。统一定价写为 \"_\"，按模态区分写具体模态名。空对象表示无此项，0 表示明确免费。",
+          "title": "输出",
+          "description": "模型生成的输出 Token 单价。",
           "type": "object",
           "additionalProperties": {
             "type": "integer",
@@ -171,82 +161,23 @@
       "additionalProperties": false
     },
     "ExtendedProfile": {
-      "title": "ExtendedProfile",
-      "description": "长上下文特殊计费配置。输入总量（含缓存读写）达到阈值时整笔套用该档位。",
+      "title": "扩展档配置",
+      "description": "输入总量达到或超过阈值时，整笔请求（含输出）使用扩展档。",
       "type": "object",
       "properties": {
         "threshold": {
-          "title": "Threshold",
-          "description": "扩展上下文阈值，按 window 的规则取整。",
+          "title": "输入阈值",
+          "description": "启用扩展档所需的最小输入 Token 数，K、M 按十进制换算。输入总量包括普通输入、缓存读取和缓存写入。",
           "type": "integer",
           "minimum": 1
         },
         "tier": {
+          "title": "扩展档单价",
+          "description": "达到阈值时使用的完整价格档位。",
           "$ref": "#/$defs/PriceTier"
         }
       },
       "required": ["threshold", "tier"],
-      "additionalProperties": false
-    },
-    "PeakProfile": {
-      "title": "PeakProfile",
-      "description": "高峰时段动态倍率配置。",
-      "type": "object",
-      "properties": {
-        "condition": {
-          "$ref": "#/$defs/PeakCondition"
-        },
-        "multiplier": {
-          "title": "Multiplier",
-          "description": "正浮点倍率，例如高峰 2 倍记为 2，半价记为 0.5。",
-          "type": "number",
-          "exclusiveMinimum": 0
-        }
-      },
-      "required": ["condition", "multiplier"],
-      "additionalProperties": false
-    },
-    "PeakCondition": {
-      "title": "PeakCondition",
-      "type": "object",
-      "properties": {
-        "timezone": {
-          "$ref": "#/$defs/TimeZone"
-        },
-        "weekdays": {
-          "title": "Weekdays",
-          "description": "true 为仅工作日（周一至周五）生效，false 为每日生效。",
-          "type": "boolean"
-        },
-        "windows": {
-          "title": "Windows",
-          "type": "array",
-          "items": {
-            "$ref": "#/$defs/TimeWindow"
-          },
-          "minItems": 1
-        }
-      },
-      "required": ["timezone", "weekdays", "windows"],
-      "additionalProperties": false
-    },
-    "TimeWindow": {
-      "title": "TimeWindow",
-      "description": "本地时间区间（左闭右开，start <= time < end），格式为 HH:MM 或 HH:MM:SS，同一天内 start < end 且不重叠。",
-      "type": "object",
-      "properties": {
-        "start": {
-          "title": "Start",
-          "type": "string",
-          "pattern": "^(?:[01]\\d|2[0-3]):[0-5]\\d(?::[0-5]\\d)?$"
-        },
-        "end": {
-          "title": "End",
-          "type": "string",
-          "pattern": "^(?:[01]\\d|2[0-3]):[0-5]\\d(?::[0-5]\\d)?$"
-        }
-      },
-      "required": ["start", "end"],
       "additionalProperties": false
     }
   }

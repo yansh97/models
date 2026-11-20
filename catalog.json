@@ -100,106 +100,6 @@
         }
       }
     },
-    "gpt-6-astra": {
-      "id": "gpt-6-astra",
-      "label": "GPT 6 Astra",
-      "window": 1000000,
-      "modalities": [
-        "text",
-        "image"
-      ],
-      "efforts": [
-        "low",
-        "medium",
-        "high",
-        "xhigh",
-        "max"
-      ],
-      "price": {
-        "currency": "USD",
-        "standard": {
-          "input": {
-            "_": 10000
-          },
-          "output": {
-            "_": 50000
-          },
-          "cache_read": {
-            "_": 1000
-          },
-          "cache_write": {
-            "_": 12500
-          }
-        },
-        "extended": {
-          "threshold": 272000,
-          "tier": {
-            "input": {
-              "_": 20000
-            },
-            "output": {
-              "_": 75000
-            },
-            "cache_read": {
-              "_": 2000
-            },
-            "cache_write": {
-              "_": 25000
-            }
-          }
-        }
-      }
-    },
-    "gpt-6.1-sol": {
-      "id": "gpt-6.1-sol",
-      "label": "GPT 6.1 Sol",
-      "window": 1000000,
-      "modalities": [
-        "text",
-        "image"
-      ],
-      "efforts": [
-        "low",
-        "medium",
-        "high",
-        "xhigh",
-        "max"
-      ],
-      "price": {
-        "currency": "USD",
-        "standard": {
-          "input": {
-            "_": 2000
-          },
-          "output": {
-            "_": 10000
-          },
-          "cache_read": {
-            "_": 100
-          },
-          "cache_write": {
-            "_": 2500
-          }
-        },
-        "extended": {
-          "threshold": 272000,
-          "tier": {
-            "input": {
-              "_": 4000
-            },
-            "output": {
-              "_": 15000
-            },
-            "cache_read": {
-              "_": 200
-            },
-            "cache_write": {
-              "_": 5000
-            }
-          }
-        }
-      }
-    },
     "gpt-6.1-terra": {
       "id": "gpt-6.1-terra",
       "label": "GPT 6.1 Terra",
@@ -246,57 +146,6 @@
             },
             "cache_write": {
               "_": 2500
-            }
-          }
-        }
-      }
-    },
-    "gpt-6-sol": {
-      "id": "gpt-6-sol",
-      "label": "GPT 6 Sol",
-      "window": 1000000,
-      "modalities": [
-        "text",
-        "image"
-      ],
-      "efforts": [
-        "none",
-        "low",
-        "medium",
-        "high",
-        "xhigh",
-        "max"
-      ],
-      "price": {
-        "currency": "USD",
-        "standard": {
-          "input": {
-            "_": 2000
-          },
-          "output": {
-            "_": 10000
-          },
-          "cache_read": {
-            "_": 200
-          },
-          "cache_write": {
-            "_": 2500
-          }
-        },
-        "extended": {
-          "threshold": 272000,
-          "tier": {
-            "input": {
-              "_": 4000
-            },
-            "output": {
-              "_": 15000
-            },
-            "cache_read": {
-              "_": 400
-            },
-            "cache_write": {
-              "_": 5000
             }
           }
         }
@@ -371,32 +220,15 @@
         "currency": "CNY",
         "standard": {
           "input": {
-            "_": 1000
+            "_": 2000
           },
           "output": {
-            "_": 4000
+            "_": 8000
           },
           "cache_read": {
-            "_": 20
+            "_": 40
           },
           "cache_write": {}
-        },
-        "peak": {
-          "condition": {
-            "timezone": "Asia/Shanghai",
-            "weekdays": true,
-            "windows": [
-              {
-                "start": "09:00",
-                "end": "12:00"
-              },
-              {
-                "start": "14:00",
-                "end": "18:00"
-              }
-            ]
-          },
-          "multiplier": 2
         }
       }
     },
@@ -417,32 +249,15 @@
         "currency": "CNY",
         "standard": {
           "input": {
-            "_": 4500
+            "_": 9000
           },
           "output": {
-            "_": 13500
+            "_": 27000
           },
           "cache_read": {
-            "_": 150
+            "_": 300
           },
           "cache_write": {}
-        },
-        "peak": {
-          "condition": {
-            "timezone": "Asia/Shanghai",
-            "weekdays": true,
-            "windows": [
-              {
-                "start": "09:00",
-                "end": "12:00"
-              },
-              {
-                "start": "14:00",
-                "end": "18:00"
-              }
-            ]
-          },
-          "multiplier": 2
         }
       }
     },
